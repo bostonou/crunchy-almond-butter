@@ -1,14 +1,18 @@
 // Adventure Story Data
 const adventureStory = {
     start: {
-        title: "🎮 The Great Developer Experience Adventure",
-        text: "You wake up in your home office, surrounded by empty coffee cups and the gentle hum of your RGB keyboard. The Developer Experience Budget display shows $1,337,420.69 and climbing. Your meal budget notification blinks: $47.83 remaining. Today feels different... magical even. What do you do?",
+        title: "🛍️ The Great Shopify Team Adventure",
+        text: "You wake up in your home office, surrounded by empty coffee cups and the gentle hum of your RGB keyboard. Your Shopify colleague's green mascot (who looks suspiciously like a certain ogre) grins at you from your monitor. The Developer Experience Budget display shows $1,337,420.69 and climbing. Your meal budget notification blinks: $47.83 remaining. Today feels different... magical even. What do you do?",
         choices: [
             { text: "🌭 Grab a hot dog for breakfast (check meal budget)", next: "hotdog_start" },
             { text: "🥜 Make some artisanal peanut butter toast", next: "peanut_butter_start" },
             { text: "🚗 Check Toronto traffic conditions", next: "traffic_start" },
             { text: "🎮 Play a walking simulator", next: "walking_sim_start" },
-            { text: "🍽️ Research your mysterious teammate's restaurant habits", next: "michelin_mystery" }
+            { text: "🍽️ Research your mysterious teammate's restaurant habits", next: "michelin_mystery" },
+            { text: "🛍️ Investigate the Shopify team's green mascot mystery", next: "shrek_mystery" },
+            { text: "🍺 Check your team's happy hour invitation", next: "too_young_drinking" },
+            { text: "🍰 Go to team dinner but only eat dessert", next: "dessert_only_dinner" },
+            { text: "😎 Be Olakitan", next: "olakitan_start" }
         ]
     },
 
@@ -20,6 +24,930 @@ const adventureStory = {
             { text: "🏃 Run away from the hot dog (save meal budget)", next: "healthy_choice" },
             { text: "🧮 Calculate the exact life cost vs meal budget", next: "math_path" },
             { text: "💸 Panic about going over meal budget", next: "budget_panic" }
+        ]
+    },
+
+    shrek_mystery: {
+        title: "🛍️ The Shopify Mascot Mystery",
+        text: "You dive deep into investigating your team's green mascot. The more you research, the more questions arise. Why does this e-commerce mascot look like he belongs in a swamp? Why is he always holding shopping bags? Your colleague's Slack avatar shows the same mysterious figure. The budget jumps to $2,345,678.90 as you uncover Shopify's deepest secrets!",
+        choices: [
+            { text: "🕵️ Investigate the swamp connection", next: "swamp_investigation" },
+            { text: "🛒 Focus on the shopping bag symbolism", next: "shopping_symbolism" },
+            { text: "💬 Ask your colleague directly about the mascot", next: "colleague_confrontation" },
+            { text: "🎭 Embrace the mystery and become the mascot", next: "mascot_transformation" }
+        ]
+    },
+
+    swamp_investigation: {
+        title: "🐸 The Swamp E-commerce Empire",
+        text: "Your investigation leads you to discover that the best e-commerce platforms are actually built in swamps. The humidity is perfect for servers, and the isolation breeds innovation. You realize Shopify's green mascot represents the swamp-to-riches journey. The budget swells to $10,000,000.00 as you plan your own swamp startup!",
+        choices: [
+            { text: "🏞️ Build a swamp data center", next: "swamp_datacenter" },
+            { text: "🐊 Partner with local swamp creatures", next: "swamp_partnership" },
+            { text: "🌭 Celebrate with swamp hot dogs", next: "swamp_hotdogs" }
+        ]
+    },
+
+    shopping_symbolism: {
+        title: "🛒 The Deep Shopping Philosophy",
+        text: "You realize the shopping bags aren't just containers - they're metaphors for life's journey. Every purchase is a choice, every bag a memory. Your Shopify team's mascot represents the eternal shopping spirit within us all. The budget reaches $25,000,000.00 as you achieve commercial enlightenment!",
+        choices: [
+            { text: "🧘 Become a shopping guru", next: "shopping_guru_ending" },
+            { text: "🎨 Design the next generation of bags", next: "bag_designer" },
+            { text: "🛍️ Open a mystical shopping experience", next: "mystical_shop" }
+        ]
+    },
+
+    colleague_confrontation: {
+        title: "💬 The Colleague Revelation",
+        text: "You approach your colleague about the mascot. They reveal the truth: the green mascot is actually a representation of their true self - a swamp-dwelling e-commerce genius who found success through Shopify. They've been hiding their ogre nature this whole time! The budget explodes to $50,000,000.00 as you become their trusted confidant!",
+        choices: [
+            { text: "🤝 Become the official mascot spokesperson", next: "mascot_spokesperson" },
+            { text: "🏰 Help them build a swamp office", next: "swamp_office" },
+            { text: "💚 Embrace the team's true green nature", next: "team_transformation" }
+        ]
+    },
+
+    mascot_transformation: {
+        title: "🎭 The Great Mascot Metamorphosis",
+        text: "You decide to become the mascot yourself. You don green face paint, practice your best ogre voice, and start carrying shopping bags everywhere. Your team loves your commitment to the brand. The budget reaches $75,000,000.00 as you embody the Shopify spirit!",
+        choices: [
+            { text: "🎬 Star in Shopify commercials", next: "commercial_star" },
+            { text: "🏆 Become the official team mascot", next: "official_mascot_ending" },
+            { text: "🌟 Inspire other teams to embrace their mascots", next: "mascot_movement" }
+        ]
+    },
+
+    official_mascot_ending: {
+        title: "🏆 The Official Shopify Team Mascot",
+        text: "You become the official mascot of your Shopify team. Your green face paint and shopping bag collection become legendary. Team meetings are now 300% more fun, and your mascot wisdom guides important decisions. Final budget: $100,000,000.00. You've found your true calling as the team's spiritual shopping guide!",
+        choices: [
+            { text: "🛍️ Lead the team to new adventures", next: "restart" }
+        ]
+    },
+
+    shopping_guru_ending: {
+        title: "🧘 The Shopping Enlightenment Master",
+        text: "You achieve shopping enlightenment and become a guru. Your teachings about the metaphysical nature of e-commerce spread throughout Shopify. Your final budget: $99,999,999.99. You've mastered the art of philosophical shopping!",
+        choices: [
+            { text: "🛒 Guide others to shopping nirvana", next: "restart" }
+        ]
+    },
+
+    // Missing story nodes from Shopify mascot paths
+    bag_designer: {
+        title: "🎨 The Revolutionary Bag Designer",
+        text: "You design the next generation of shopping bags with built-in e-commerce capabilities. Each bag can process transactions, track inventory, and even suggest products! Your Shopify team marvels at your innovation. The budget soars to $88,888,888.88!",
+        choices: [
+            { text: "💼 Launch your bag empire", next: "bag_empire_ending" }
+        ]
+    },
+
+    bag_empire_ending: {
+        title: "💼 The Shopping Bag Empire",
+        text: "Your smart shopping bags revolutionize e-commerce forever. Every major retailer wants your technology. Your Shopify team becomes the most innovative in the company. Final budget: $200,000,000.00. You've created the future of shopping!",
+        choices: [
+            { text: "🛍️ Design the next innovation", next: "restart" }
+        ]
+    },
+
+    mystical_shop: {
+        title: "🛍️ The Mystical Shopping Experience",
+        text: "You open a store where customers shop with their souls. Each purchase is a spiritual journey. Your Shopify team helps you integrate mystical payment processing. The budget reaches $77,777,777.77 as you achieve commercial enlightenment!",
+        choices: [
+            { text: "🔮 Become the Shopping Mystic", next: "shopping_mystic_ending" }
+        ]
+    },
+
+    shopping_mystic_ending: {
+        title: "🔮 The Shopping Mystic",
+        text: "You become the world's first shopping mystic. Customers seek your wisdom for their purchasing decisions. Your Shopify team supports your mystical commerce platform. Final budget: $333,333,333.33. You've transcended traditional retail!",
+        choices: [
+            { text: "🌟 Guide others to shopping enlightenment", next: "restart" }
+        ]
+    },
+
+    mascot_spokesperson: {
+        title: "🤝 The Official Mascot Spokesperson",
+        text: "You become the official spokesperson for your team's green mascot. Your speeches about swamp-to-success stories inspire the entire company. The budget climbs to $55,555,555.55 as you embody the Shopify spirit!",
+        choices: [
+            { text: "🎤 Become the Chief Inspiration Officer", next: "inspiration_officer_ending" }
+        ]
+    },
+
+    inspiration_officer_ending: {
+        title: "🎤 The Chief Inspiration Officer",
+        text: "You become Shopify's first Chief Inspiration Officer. Your motivational mascot speeches transform company culture. Every team meeting starts with your wisdom. Final budget: $150,000,000.00. You've inspired an entire organization!",
+        choices: [
+            { text: "🌟 Inspire a new adventure", next: "restart" }
+        ]
+    },
+
+    swamp_office: {
+        title: "🏰 The Swamp Office Paradise",
+        text: "You help your colleague build the ultimate swamp office. It has perfect humidity for servers, natural soundproofing, and surprisingly good wifi. Your Shopify team requests to relocate here. The budget reaches $44,444,444.44!",
+        choices: [
+            { text: "🏞️ Become the Swamp Office Architect", next: "swamp_architect_ending" }
+        ]
+    },
+
+    swamp_architect_ending: {
+        title: "🏞️ The Swamp Office Architect",
+        text: "You revolutionize office design with swamp-inspired workspaces. Companies worldwide adopt your wetland-tech aesthetic. Your Shopify team becomes the most innovative workspace in the industry. Final budget: $120,000,000.00. You've created the future of work!",
+        choices: [
+            { text: "🌿 Design a new adventure", next: "restart" }
+        ]
+    },
+
+    team_transformation: {
+        title: "💚 The Great Team Transformation",
+        text: "You lead your entire Shopify team in embracing their true green nature. Everyone adopts the swamp aesthetic. Productivity soars as the team finds their authentic selves. The budget explodes to $99,999,999.99!",
+        choices: [
+            { text: "🌟 Become the Team Transformation Leader", next: "transformation_leader_ending" }
+        ]
+    },
+
+    transformation_leader_ending: {
+        title: "🌟 The Team Transformation Leader",
+        text: "You become legendary for helping teams find their authentic identity. Other departments request your transformation services. Your Shopify team is the happiest and most productive in the company. Final budget: $250,000,000.00. You've mastered team dynamics!",
+        choices: [
+            { text: "🎭 Transform a new adventure", next: "restart" }
+        ]
+    },
+
+    commercial_star: {
+        title: "🎬 The Shopify Commercial Star",
+        text: "You star in Shopify commercials as the green mascot. Your performance is so compelling that sales increase by 300%. The marketing team considers you their secret weapon. The budget reaches $88,888,888.88!",
+        choices: [
+            { text: "🌟 Become the Chief Marketing Mascot", next: "marketing_mascot_ending" }
+        ]
+    },
+
+    marketing_mascot_ending: {
+        title: "🌟 The Chief Marketing Mascot",
+        text: "You become Shopify's Chief Marketing Mascot. Your campaigns are legendary, and your green face paint becomes iconic. The company's brand recognition skyrockets. Final budget: $500,000,000.00. You've revolutionized marketing!",
+        choices: [
+            { text: "🎭 Market a new adventure", next: "restart" }
+        ]
+    },
+
+    mascot_movement: {
+        title: "🌟 The Great Mascot Movement",
+        text: "You inspire other teams across Shopify to embrace their mascots. Soon, every department has a unique mascot identity. The company culture transforms into something magical. The budget reaches $77,777,777.77!",
+        choices: [
+            { text: "🎪 Become the Mascot Movement Leader", next: "mascot_leader_ending" }
+        ]
+    },
+
+    mascot_leader_ending: {
+        title: "🎪 The Mascot Movement Leader",
+        text: "You lead the greatest mascot revolution in corporate history. Shopify becomes known for its incredible team mascots. Other companies study your methods. Final budget: $1,000,000,000.00. You've created a cultural phenomenon!",
+        choices: [
+            { text: "🎭 Lead a new adventure", next: "restart" }
+        ]
+    },
+
+    // Missing swamp-related story nodes
+    swamp_datacenter: {
+        title: "🏞️ The Swamp Data Center Empire",
+        text: "You build the world's first swamp data center. The natural cooling and humidity create perfect conditions for servers. Your Shopify team's applications run faster than ever. The budget soars to $66,666,666.66!",
+        choices: [
+            { text: "🌿 Become the Swamp Tech Pioneer", next: "swamp_tech_ending" }
+        ]
+    },
+
+    swamp_tech_ending: {
+        title: "🌿 The Swamp Tech Pioneer",
+        text: "You revolutionize data center design with swamp technology. Every major tech company wants your expertise. Your Shopify team becomes the most efficient in the industry. Final budget: $300,000,000.00. You've created the future of green computing!",
+        choices: [
+            { text: "🐸 Innovate a new adventure", next: "restart" }
+        ]
+    },
+
+    swamp_partnership: {
+        title: "🐊 The Swamp Creature Alliance",
+        text: "You partner with local swamp creatures to create the most unique development team ever. The alligators handle security, the frogs manage debugging, and the turtles oversee long-term planning. Your Shopify team is amazed by the efficiency. The budget reaches $55,555,555.55!",
+        choices: [
+            { text: "🐸 Become the Interspecies Team Leader", next: "creature_leader_ending" }
+        ]
+    },
+
+    creature_leader_ending: {
+        title: "🐸 The Interspecies Team Leader",
+        text: "You become the world's first interspecies team leader. Your methods revolutionize collaborative work. Nature documentaries feature your team. Your Shopify colleagues consider you a pioneer. Final budget: $175,000,000.00. You've bridged the gap between nature and technology!",
+        choices: [
+            { text: "🌿 Evolve a new adventure", next: "restart" }
+        ]
+    },
+
+    swamp_hotdogs: {
+        title: "🌭 The Swamp Hot Dog Celebration",
+        text: "You celebrate your swamp discoveries with special swamp hot dogs. These unique delicacies are made from sustainable swamp plants and somehow taste better than regular hot dogs. Plus, they ADD 8 minutes to your life! Your Shopify team joins the celebration. The budget reaches $33,333,333.33!",
+        choices: [
+            { text: "🌭 Become the Swamp Food Innovator", next: "swamp_food_ending" }
+        ]
+    },
+
+    swamp_food_ending: {
+        title: "🌭 The Swamp Food Innovator",
+        text: "You revolutionize the food industry with life-extending swamp hot dogs. Your products reverse the traditional hot dog curse. Your Shopify team helps you create an e-commerce empire around healthy swamp food. Final budget: $400,000,000.00. You've saved countless lifespans!",
+        choices: [
+            { text: "🌿 Nourish a new adventure", next: "restart" }
+        ]
+    },
+
+    // Missing Oklahoma tourism story
+    tourism_ending: {
+        title: "🏞️ The Oklahoma Tourism Empire",
+        text: "You start the most successful tourism company in Oklahoma history. Your slogan 'Oklahoma: Surprisingly Awesome' becomes legendary. Your Shopify team helps you build the e-commerce platform for booking Prairie Adventures. The budget reaches $45,000,000.00!",
+        choices: [
+            { text: "🌾 Become the Tourism Visionary", next: "restart" }
+        ]
+    },
+
+    oklahoma_ending: {
+        title: "🌾 The Oklahoma Tech Pioneer",
+        text: "You become the tech pioneer of Oklahoma, establishing the state as a major technology hub. Your Shopify team helps you build the infrastructure for the 'Silicon Prairie'. Companies flock to Oklahoma for your expertise. The budget reaches $85,000,000.00!",
+        choices: [
+            { text: "🏞️ Pioneer a new adventure", next: "restart" }
+        ]
+    },
+
+    // Missing lifestyle and dental stories
+    balanced_lifestyle: {
+        title: "🌭🦷 The Balanced Lifestyle Master",
+        text: "You've achieved the perfect balance: eating hot dogs for pleasure but brushing your teeth after each one. Your life span stays stable while your joy remains high. Your Shopify team admires your disciplined approach to unhealthy eating. The budget reaches $33,333,333.33!",
+        choices: [
+            { text: "🦷 Become the Balanced Living Guru", next: "balanced_guru_ending" }
+        ]
+    },
+
+    balanced_guru_ending: {
+        title: "🦷 The Balanced Living Guru",
+        text: "You teach others the art of balanced indulgence. Your philosophy 'Eat what you love, but take care of yourself' becomes a global movement. Your Shopify team helps you build a wellness e-commerce empire. Final budget: $111,111,111.11. You've mastered the art of balance!",
+        choices: [
+            { text: "⚖️ Balance a new adventure", next: "restart" }
+        ]
+    },
+
+    dental_guru: {
+        title: "🦷 The Dental Philosophy Master",
+        text: "You become a guru of dental wordplay and oral health philosophy. Your insights about 'dental' being in 'incidental' revolutionize both dentistry and linguistics. Your Shopify team helps you create educational content. The budget reaches $77,777,777.00!",
+        choices: [
+            { text: "🦷 Become the Dental Wisdom Teacher", next: "dental_wisdom_ending" }
+        ]
+    },
+
+    dental_wisdom_ending: {
+        title: "🦷 The Dental Wisdom Teacher",
+        text: "You establish the world's first Dental Philosophy Academy. Students learn about the deeper meaning of oral health and wordplay. Your Shopify team builds the e-learning platform. Final budget: $222,222,222.22. You've revolutionized dental education!",
+        choices: [
+            { text: "🦷 Brush up on a new adventure", next: "restart" }
+        ]
+    },
+
+    napkin_science: {
+        title: "🍽️ The Napkin Science Institute",
+        text: "You establish the world's first Napkin Folding Research Institute. Your scientific approach to napkin analysis revolutionizes restaurant service evaluation. Your Shopify team helps you build the data collection platform. The budget reaches $44,444,444.44!",
+        choices: [
+            { text: "🍽️ Become the Napkin Science Professor", next: "napkin_professor_ending" }
+        ]
+    },
+
+    napkin_professor_ending: {
+        title: "🍽️ The Napkin Science Professor",
+        text: "You become the world's leading expert in napkin-based restaurant evaluation. Your methodologies are adopted by food critics worldwide. Your Shopify team celebrates your unique expertise. Final budget: $333,333,333.33. You've elevated napkin folding to an art form!",
+        choices: [
+            { text: "🍽️ Fold into a new adventure", next: "restart" }
+        ]
+    },
+
+    // New storyline: Too Young to Drink
+    too_young_drinking: {
+        title: "🍺 The Underage Exclusion",
+        text: "You check your Shopify team's happy hour invitation. Everyone's excited about the craft beer tasting, but you're too young to drink. You watch from the sidelines as your teammates bond over IPAs and inside jokes. The budget stays at $1,337,420.69 but your social anxiety climbs. You feel left out of everything.",
+        choices: [
+            { text: "😢 Sulk in your cubicle", next: "drinking_sulk" },
+            { text: "💪 Prove yourself through work excellence", next: "work_excellence" },
+            { text: "🎯 Find other ways to connect with the team", next: "team_connection" },
+            { text: "🏃 Focus on your own development", next: "self_development" }
+        ]
+    },
+
+    drinking_sulk: {
+        title: "😢 The Sulking Phase",
+        text: "You retreat to your cubicle, feeling sorry for yourself. Your Shopify teammates' laughter echoes from the break room. You stress-eat three bags of chips and watch the budget drop to $1,234,567.89. But then you realize - this is your chance to work uninterrupted while everyone else is distracted!",
+        choices: [
+            { text: "💻 Become the after-hours coding legend", next: "coding_legend" },
+            { text: "📚 Study while others party", next: "study_master" },
+            { text: "🌭 Stress-eat hot dogs (8 minutes per dog)", next: "sulk_hotdog" }
+        ]
+    },
+
+    work_excellence: {
+        title: "💪 The Excellence Path",
+        text: "You channel your exclusion into work excellence. While your Shopify teammates are discussing beer, you're optimizing code, fixing bugs, and improving user experience. Your productivity soars! The budget jumps to $5,555,555.55 as management notices your exceptional work.",
+        choices: [
+            { text: "🚀 Become the team's technical leader", next: "technical_leader" },
+            { text: "📈 Get promoted ahead of your peers", next: "early_promotion" },
+            { text: "🎯 Balance work with social connections", next: "balanced_approach" }
+        ]
+    },
+
+    team_connection: {
+        title: "🎯 The Creative Connector",
+        text: "You find creative ways to connect with your Shopify team. You organize morning coffee chats, start a gaming club, and suggest team lunches. Your teammates appreciate your initiative! The budget reaches $3,333,333.33 as you become the team's social organizer.",
+        choices: [
+            { text: "🎮 Become the team's culture coordinator", next: "culture_coordinator" },
+            { text: "☕ Start a coffee appreciation society", next: "coffee_society" },
+            { text: "🍽️ Organize epic team lunches", next: "lunch_organizer" }
+        ]
+    },
+
+    self_development: {
+        title: "🏃 The Self-Development Journey",
+        text: "You focus on your own growth. While your Shopify teammates are drinking, you're learning new skills, reading books, and building side projects. Your personal development accelerates! The budget reaches $7,777,777.77 as you become increasingly valuable.",
+        choices: [
+            { text: "🧠 Become the team's learning advocate", next: "learning_advocate" },
+            { text: "🔥 Rise to leadership through competence", next: "competence_leader" },
+            { text: "🎯 Mentor others in non-drinking team building", next: "sober_mentor" }
+        ]
+    },
+
+    coding_legend: {
+        title: "💻 The After-Hours Coding Legend",
+        text: "You become legendary for your after-hours coding sessions. While everyone else recovers from happy hour, you're shipping features and fixing critical bugs. Your Shopify team starts calling you 'The Night Owl'. The budget soars to $15,000,000.00!",
+        choices: [
+            { text: "🦉 Become the official night-shift leader", next: "night_shift_leader" },
+            { text: "⚡ Rise to senior developer through pure skill", next: "skill_promotion" }
+        ]
+    },
+
+    technical_leader: {
+        title: "🚀 The Technical Leader",
+        text: "Your work excellence propels you to technical leadership. Your Shopify teammates look to you for guidance on complex problems. You're invited to leadership meetings and strategy sessions. The budget reaches $25,000,000.00 as you become indispensable!",
+        choices: [
+            { text: "👑 Accept the leadership role", next: "young_leader" },
+            { text: "🎯 Stay humble and keep learning", next: "humble_leader" }
+        ]
+    },
+
+    young_leader: {
+        title: "👑 The Young Leader",
+        text: "You rise to be in charge of your Shopify team despite being the youngest. Your teammates respect your competence and dedication. At the leadership celebration, they offer you your first drink. You take a sip of the expensive whiskey and... it tastes absolutely disgusting! The budget reaches $50,000,000.00!",
+        choices: [
+            { text: "🤢 Admit alcohol is gross and stay sober", next: "sober_leader_ending" },
+            { text: "😅 Pretend to like it to fit in", next: "pretend_drink" },
+            { text: "🎯 Suggest better celebration alternatives", next: "alternative_celebration" }
+        ]
+    },
+
+    sober_leader_ending: {
+        title: "🤢 The Honest Sober Leader",
+        text: "You honestly admit that alcohol tastes disgusting and you'd rather stay sober. Your Shopify team is amazed by your authenticity and leadership. You start a new tradition of celebration with amazing food and activities instead of alcohol. Other teams follow your example. Final budget: $100,000,000.00. You've revolutionized team culture!",
+        choices: [
+            { text: "🌟 Lead a sober revolution", next: "restart" }
+        ]
+    },
+
+    pretend_drink: {
+        title: "😅 The Pretend Drinker",
+        text: "You pretend to like alcohol to fit in, but it makes you miserable. You become known as the 'fun leader' but lose your authenticity. Your Shopify team likes the persona but not the real you. The budget drops to $5,000,000.00 as you struggle with impostor syndrome.",
+        choices: [
+            { text: "😔 Come clean about your true preferences", next: "authentic_revelation" },
+            { text: "🎭 Continue the charade", next: "fake_leader_ending" }
+        ]
+    },
+
+    authentic_revelation: {
+        title: "😔 The Authentic Revelation",
+        text: "You finally admit you don't like alcohol and have been pretending. Your Shopify team appreciates your honesty and vulnerability. They respect you more for being authentic than for pretending. The budget recovers to $75,000,000.00 as you become a genuine leader!",
+        choices: [
+            { text: "🌟 Embrace authentic leadership", next: "restart" }
+        ]
+    },
+
+    fake_leader_ending: {
+        title: "🎭 The Fake Leader",
+        text: "You continue pretending to enjoy alcohol and lose yourself in the process. Your Shopify team follows a leader who isn't really you. You achieve success but feel empty inside. Final budget: $10,000,000.00. You've learned that authenticity matters more than fitting in.",
+        choices: [
+            { text: "🎭 Reflect on authenticity", next: "restart" }
+        ]
+    },
+
+    // New storyline: Dessert Only Dinner
+    dessert_only_dinner: {
+        title: "🍰 The Dessert Only Decision",
+        text: "Your Shopify team goes to a fancy restaurant for a group dinner. While everyone orders full meals, you decide to only eat dessert. Your teammates raise eyebrows as you order the chocolate lava cake, crème brûlée, and tiramisu. The budget stays at $1,337,420.69 but your meal budget drops to $15.47.",
+        choices: [
+            { text: "🍫 Embrace the dessert lifestyle", next: "dessert_lifestyle" },
+            { text: "😅 Explain your dessert strategy", next: "dessert_strategy" },
+            { text: "🤫 Keep your reasons mysterious", next: "mysterious_dessert" },
+            { text: "🍰 Become the team's dessert expert", next: "dessert_expert" }
+        ]
+    },
+
+    dessert_lifestyle: {
+        title: "🍫 The Dessert Lifestyle",
+        text: "You fully embrace eating only dessert. Your Shopify teammates are amazed by your dedication to sweetness. You feel energized and happy! The sugar rush gives you incredible focus. The budget jumps to $4,444,444.44 as your productivity soars from the glucose boost.",
+        choices: [
+            { text: "🏠 Go home and sleep like a baby", next: "dessert_sleep" },
+            { text: "🎯 Use the sugar energy for work", next: "sugar_productivity" },
+            { text: "🍯 Research the science of dessert-only nutrition", next: "dessert_science" }
+        ]
+    },
+
+    dessert_strategy: {
+        title: "😅 The Dessert Strategy Explanation",
+        text: "You explain your dessert strategy to your curious Shopify teammates. 'I'm saving room for a proper meal later with friends,' you say. 'Plus, dessert first means I won't be too full to enjoy it!' Your team is impressed by your planning. The budget reaches $3,333,333.33.",
+        choices: [
+            { text: "🏠 Execute your plan perfectly", next: "perfect_plan" },
+            { text: "😴 Go home and sleep well", next: "dessert_sleep" },
+            { text: "🍽️ Meet friends for the real meal", next: "friends_meal" }
+        ]
+    },
+
+    dessert_sleep: {
+        title: "😴 The Perfect Dessert Sleep",
+        text: "You go home after the dessert dinner and sleep like a baby. The sugar has metabolized perfectly, leaving you relaxed and content. You wake up refreshed and energized. Your Shopify teammates text asking about your secret to good sleep. The budget reaches $6,666,666.66!",
+        choices: [
+            { text: "🍽️ Meet friends for a proper meal", next: "friends_meal" },
+            { text: "😴 Become the team's sleep consultant", next: "sleep_consultant" },
+            { text: "🍰 Perfect your dessert-sleep routine", next: "dessert_routine" }
+        ]
+    },
+
+    friends_meal: {
+        title: "🍽️ The Friends Meal",
+        text: "You meet your friends later for a proper meal. You're perfectly hungry and enjoy every bite of the savory food. Your friends are impressed by your dinner strategy. The conversation flows, the food is perfect, and you feel completely satisfied. The budget reaches $8,888,888.88!",
+        choices: [
+            { text: "🎉 This strategy worked perfectly!", next: "perfect_strategy_ending" },
+            { text: "🤔 Reflect on the evening's choices", next: "evening_reflection" },
+            { text: "📚 Document your perfect dinner strategy", next: "dinner_strategy_guide" }
+        ]
+    },
+
+    perfect_strategy_ending: {
+        title: "🎉 The Perfect Strategy Master",
+        text: "Your dessert-first, friends-later strategy worked flawlessly! You enjoyed team bonding, got perfect sleep, and had an amazing meal with friends. Your Shopify team starts copying your approach. You've revolutionized social dining! Final budget: $99,999,999.99. You've mastered the art of strategic eating!",
+        choices: [
+            { text: "🍽️ Strategize a new adventure", next: "restart" }
+        ]
+    },
+
+    evening_reflection: {
+        title: "🤔 The Evening Reflection",
+        text: "You reflect on your choices. The dessert was fun, the sleep was great, and the friends meal was perfect. But you realize you missed some of the team bonding during the main course. Your Shopify colleagues had important conversations while you were focused on dessert. The budget settles at $5,555,555.55.",
+        choices: [
+            { text: "😔 Regret missing team bonding", next: "regret_ending" },
+            { text: "😊 Appreciate the unique experience", next: "appreciation_ending" },
+            { text: "⚖️ Find balance for next time", next: "balanced_dining" }
+        ]
+    },
+
+    regret_ending: {
+        title: "😔 The Regret Realization",
+        text: "You realize you missed important team bonding moments while focused on your dessert strategy. Your Shopify teammates made connections and shared stories during the main course that you weren't part of. You feel left out and regret prioritizing your personal dining preferences over team unity. Final budget: $2,222,222.22. You've learned that sometimes fitting in matters more than personal optimization.",
+        choices: [
+            { text: "😔 Learn from the experience", next: "restart" }
+        ]
+    },
+
+    appreciation_ending: {
+        title: "😊 The Appreciation Master",
+        text: "You appreciate the unique experience you created. While you may have missed some team conversations, you gained a memorable story, perfect sleep, and a wonderful meal with friends. Your Shopify team respects your individuality and asks for dessert recommendations. Final budget: $77,777,777.77. You've learned that being authentic sometimes means being different!",
+        choices: [
+            { text: "🍰 Appreciate a new adventure", next: "restart" }
+        ]
+    },
+
+    // Missing nodes for drinking storyline
+    study_master: {
+        title: "📚 The Study Master",
+        text: "While your Shopify teammates are at happy hour, you dive into studying. You learn new frameworks, master algorithms, and become incredibly knowledgeable. Your expertise grows exponentially! The budget reaches $12,000,000.00 as you become the team's go-to expert.",
+        choices: [
+            { text: "🧠 Become the team's technical mentor", next: "technical_mentor_ending" },
+            { text: "📖 Continue your learning journey", next: "learning_advocate" }
+        ]
+    },
+
+    technical_mentor_ending: {
+        title: "🧠 The Technical Mentor",
+        text: "You become the technical mentor for your entire Shopify team. Your knowledge gained during their happy hours makes you invaluable. You train new developers and guide architecture decisions. Final budget: $88,888,888.88. You've proven that learning beats drinking!",
+        choices: [
+            { text: "📚 Mentor a new adventure", next: "restart" }
+        ]
+    },
+
+    sulk_hotdog: {
+        title: "🌭 The Sulk Hot Dog Spiral",
+        text: "You stress-eat hot dogs while sulking about being excluded. Each hot dog removes 8 minutes from your life span, but the emotional eating continues. You consume 15 hot dogs (120 minutes lost) while your Shopify team is at happy hour. The budget crashes to $500,000.00.",
+        choices: [
+            { text: "😢 Continue the downward spiral", next: "sulk_spiral_ending" },
+            { text: "💪 Turn the pain into motivation", next: "pain_motivation" }
+        ]
+    },
+
+    sulk_spiral_ending: {
+        title: "😢 The Sulk Spiral",
+        text: "You spiral into self-pity and unhealthy habits. Your Shopify team returns from happy hour to find you surrounded by hot dog wrappers. They feel bad and invite you to future non-drinking events. Final budget: $100,000.00. You've learned that sulking doesn't solve social problems!",
+        choices: [
+            { text: "🌭 Wallow in a new adventure", next: "restart" }
+        ]
+    },
+
+    pain_motivation: {
+        title: "💪 The Pain-Motivated Success",
+        text: "You turn your exclusion pain into incredible motivation. Your Shopify team returns to find you've completed a week's worth of work. They're amazed by your productivity and start including you in all activities. The budget recovers to $25,000,000.00!",
+        choices: [
+            { text: "🚀 Become the motivation master", next: "motivation_master_ending" }
+        ]
+    },
+
+    motivation_master_ending: {
+        title: "🚀 The Motivation Master",
+        text: "You become legendary for turning setbacks into success. Your Shopify team learns from your resilience. You teach workshops on 'Productive Exclusion' and become a company-wide inspiration. Final budget: $150,000,000.00. You've mastered the art of resilient motivation!",
+        choices: [
+            { text: "💪 Motivate a new adventure", next: "restart" }
+        ]
+    },
+
+    early_promotion: {
+        title: "📈 The Early Promotion",
+        text: "Your exceptional work during happy hours leads to an early promotion. You become the youngest team lead at Shopify. Your teammates are impressed but also slightly envious. The budget reaches $35,000,000.00 as you rise through the ranks!",
+        choices: [
+            { text: "👑 Embrace the leadership role", next: "young_leader" },
+            { text: "🤝 Stay humble and help others", next: "humble_leader" }
+        ]
+    },
+
+    humble_leader: {
+        title: "🤝 The Humble Leader",
+        text: "You stay humble despite your success. Your Shopify team appreciates your down-to-earth leadership style. You mentor others and create an inclusive environment. At the team celebration, they offer you alcohol, which you discover tastes terrible! The budget reaches $45,000,000.00!",
+        choices: [
+            { text: "🤢 Admit alcohol is disgusting", next: "sober_leader_ending" },
+            { text: "😅 Laugh it off and suggest alternatives", next: "alternative_celebration" }
+        ]
+    },
+
+    alternative_celebration: {
+        title: "🎯 The Alternative Celebration",
+        text: "You suggest celebrating with amazing food, games, and activities instead of alcohol. Your Shopify team loves the idea! You organize epic celebration events that become legendary. The budget reaches $60,000,000.00 as you revolutionize team culture!",
+        choices: [
+            { text: "🎉 Become the celebration innovator", next: "celebration_innovator_ending" }
+        ]
+    },
+
+    celebration_innovator_ending: {
+        title: "🎉 The Celebration Innovator",
+        text: "You become known throughout Shopify as the celebration innovator. Your alcohol-free events are more fun than traditional happy hours. Other teams copy your approach. Final budget: $200,000,000.00. You've revolutionized workplace celebrations!",
+        choices: [
+            { text: "🎊 Celebrate a new adventure", next: "restart" }
+        ]
+    },
+
+    // Missing nodes for dessert storyline
+    mysterious_dessert: {
+        title: "🤫 The Mysterious Dessert Choice",
+        text: "You keep your dessert-only strategy mysterious. Your Shopify teammates are intrigued by your enigmatic dining choices. Some think you're on a secret diet, others suspect you're a dessert critic. The mystery adds to your allure! The budget reaches $4,567,890.12.",
+        choices: [
+            { text: "😴 Maintain the mystery and sleep well", next: "dessert_sleep" },
+            { text: "🕵️ Become the team's mystery person", next: "mystery_person_ending" }
+        ]
+    },
+
+    mystery_person_ending: {
+        title: "🕵️ The Mystery Person",
+        text: "You become known as the team's mystery person. Your Shopify colleagues are fascinated by your unpredictable choices. You gain a reputation for being intriguingly different. Final budget: $55,555,555.55. You've learned that mystery can be magnetic!",
+        choices: [
+            { text: "🔍 Mysteriously start a new adventure", next: "restart" }
+        ]
+    },
+
+    dessert_expert: {
+        title: "🍰 The Team's Dessert Expert",
+        text: "You become the official dessert expert for your Shopify team. Your colleagues consult you for dessert recommendations, birthday cake choices, and sweet treat decisions. You develop an encyclopedia of dessert knowledge! The budget reaches $7,777,777.77.",
+        choices: [
+            { text: "😴 Perfect your dessert-sleep routine", next: "dessert_sleep" },
+            { text: "🍰 Become the company's dessert consultant", next: "dessert_consultant_ending" }
+        ]
+    },
+
+    dessert_consultant_ending: {
+        title: "🍰 The Dessert Consultant",
+        text: "You become Shopify's official dessert consultant. You advise on office celebrations, client meetings, and team events. Your dessert expertise becomes a valuable skill. Final budget: $125,000,000.00. You've turned sweet tooth into sweet success!",
+        choices: [
+            { text: "🧁 Sweeten a new adventure", next: "restart" }
+        ]
+    },
+
+    perfect_plan: {
+        title: "🏠 The Perfect Plan Execution",
+        text: "Your plan works flawlessly. You leave the team dinner satisfied with dessert, go home feeling content, and later meet friends for a perfect meal. Your Shopify teammates are impressed by your strategic thinking. The budget reaches $9,999,999.99!",
+        choices: [
+            { text: "🎯 This was the perfect strategy!", next: "perfect_strategy_ending" },
+            { text: "📚 Teach others your planning skills", next: "planning_guru_ending" }
+        ]
+    },
+
+    planning_guru_ending: {
+        title: "📚 The Planning Guru",
+        text: "You become known as the planning guru at Shopify. Your strategic approach to social dining inspires others to think more intentionally about their choices. You teach workshops on 'Strategic Social Navigation'. Final budget: $111,111,111.11. You've mastered the art of life planning!",
+        choices: [
+            { text: "🎯 Plan a new adventure", next: "restart" }
+        ]
+    },
+
+    balanced_dining: {
+        title: "⚖️ The Balanced Dining Approach",
+        text: "You decide to find balance for future team dinners. You'll enjoy some team bonding during the main course while still prioritizing your personal preferences. Your Shopify team appreciates your thoughtful approach. The budget reaches $15,000,000.00 as you find harmony!",
+        choices: [
+            { text: "⚖️ Become the balance master", next: "balance_master_ending" }
+        ]
+    },
+
+    balance_master_ending: {
+        title: "⚖️ The Balance Master",
+        text: "You become the team's balance master, helping others find harmony between personal preferences and team dynamics. Your Shopify colleagues seek your advice on social navigation. Final budget: $88,888,888.88. You've mastered the art of social balance!",
+        choices: [
+            { text: "⚖️ Balance a new adventure", next: "restart" }
+        ]
+    },
+
+    // Additional missing nodes for drinking storyline
+    balanced_approach: {
+        title: "🎯 The Balanced Approach",
+        text: "You balance work excellence with social connections. You excel at your job while also finding ways to connect with your Shopify team outside of drinking. Your colleagues appreciate your well-rounded approach. The budget reaches $18,000,000.00 as you master social-professional balance!",
+        choices: [
+            { text: "🌟 Become the team's balance advocate", next: "balance_advocate_ending" }
+        ]
+    },
+
+    balance_advocate_ending: {
+        title: "🌟 The Balance Advocate",
+        text: "You become known as the balance advocate at Shopify. You help others find harmony between work and social life without relying on alcohol. Your approach becomes a model for healthy workplace culture. Final budget: $150,000,000.00. You've revolutionized work-life balance!",
+        choices: [
+            { text: "⚖️ Balance a new adventure", next: "restart" }
+        ]
+    },
+
+    culture_coordinator: {
+        title: "🎮 The Culture Coordinator",
+        text: "You become the official culture coordinator for your Shopify team. You organize game nights, movie marathons, and creative workshops. Your team's culture becomes legendary throughout the company. The budget reaches $22,000,000.00 as you build amazing team spirit!",
+        choices: [
+            { text: "🎪 Become the company's culture expert", next: "culture_expert_ending" }
+        ]
+    },
+
+    culture_expert_ending: {
+        title: "🎪 The Culture Expert",
+        text: "You become Shopify's culture expert, helping teams across the company build amazing cultures without relying on alcohol. Your methods are studied and replicated. Final budget: $175,000,000.00. You've revolutionized workplace culture!",
+        choices: [
+            { text: "🎨 Create a new adventure", next: "restart" }
+        ]
+    },
+
+    coffee_society: {
+        title: "☕ The Coffee Appreciation Society",
+        text: "You start a coffee appreciation society at Shopify. Your team bonds over artisanal coffee, brewing techniques, and caffeine-fueled conversations. Your society becomes more popular than happy hour! The budget reaches $16,000,000.00 as you create a coffee culture!",
+        choices: [
+            { text: "☕ Become the coffee culture master", next: "coffee_culture_ending" }
+        ]
+    },
+
+    coffee_culture_ending: {
+        title: "☕ The Coffee Culture Master",
+        text: "You become the master of coffee culture at Shopify. Your coffee appreciation society spreads to other teams. You partner with local roasters and create the ultimate workplace coffee experience. Final budget: $125,000,000.00. You've caffeinated your way to success!",
+        choices: [
+            { text: "☕ Brew a new adventure", next: "restart" }
+        ]
+    },
+
+    lunch_organizer: {
+        title: "🍽️ The Epic Lunch Organizer",
+        text: "You organize epic team lunches that become legendary. Your Shopify team experiences amazing restaurants, food trucks, and culinary adventures. Your lunch planning skills become renowned throughout the company. The budget reaches $14,000,000.00!",
+        choices: [
+            { text: "🍽️ Become the culinary team builder", next: "culinary_team_builder_ending" }
+        ]
+    },
+
+    culinary_team_builder_ending: {
+        title: "🍽️ The Culinary Team Builder",
+        text: "You become the culinary team builder at Shopify. Your food-focused team building events create stronger bonds than any happy hour. You revolutionize team building through shared meals. Final budget: $200,000,000.00. You've proven that food builds better teams than drinks!",
+        choices: [
+            { text: "🍽️ Feast on a new adventure", next: "restart" }
+        ]
+    },
+
+    learning_advocate: {
+        title: "🧠 The Learning Advocate",
+        text: "You become the team's learning advocate, organizing study groups, skill-sharing sessions, and knowledge exchanges. Your Shopify team becomes the most knowledgeable and skilled in the company. The budget reaches $30,000,000.00 as learning becomes your team's superpower!",
+        choices: [
+            { text: "📚 Become the knowledge master", next: "knowledge_master_ending" }
+        ]
+    },
+
+    knowledge_master_ending: {
+        title: "📚 The Knowledge Master",
+        text: "You become the knowledge master at Shopify. Your learning-focused culture spreads throughout the company. You create a knowledge-sharing revolution that transforms how teams grow. Final budget: $300,000,000.00. You've proven that learning is the ultimate team activity!",
+        choices: [
+            { text: "🧠 Learn a new adventure", next: "restart" }
+        ]
+    },
+
+    competence_leader: {
+        title: "🔥 The Competence Leader",
+        text: "You rise to leadership purely through competence. Your Shopify team respects your skills and knowledge. You become the youngest team lead through merit alone. At the celebration, they offer you alcohol, which you discover tastes disgusting! The budget reaches $40,000,000.00!",
+        choices: [
+            { text: "🤢 Admit alcohol is gross", next: "sober_leader_ending" },
+            { text: "🎯 Suggest competence-based celebrations", next: "competence_celebration" }
+        ]
+    },
+
+    competence_celebration: {
+        title: "🎯 The Competence Celebration",
+        text: "You suggest celebrating achievements through skill demonstrations, learning challenges, and knowledge sharing. Your Shopify team loves celebrating competence! The budget reaches $55,000,000.00 as you create a merit-based culture!",
+        choices: [
+            { text: "🏆 Become the competence culture leader", next: "competence_culture_ending" }
+        ]
+    },
+
+    competence_culture_ending: {
+        title: "🏆 The Competence Culture Leader",
+        text: "You create a competence-based culture at Shopify where achievements are celebrated through skill and knowledge. Your approach spreads throughout the company. Final budget: $250,000,000.00. You've revolutionized how success is celebrated!",
+        choices: [
+            { text: "🏆 Achieve a new adventure", next: "restart" }
+        ]
+    },
+
+    sober_mentor: {
+        title: "🎯 The Sober Mentor",
+        text: "You become a mentor for others who don't drink, helping them navigate team building and social situations. Your Shopify team appreciates your inclusive approach. You create a support network for non-drinkers. The budget reaches $20,000,000.00!",
+        choices: [
+            { text: "🌟 Become the inclusion champion", next: "inclusion_champion_ending" }
+        ]
+    },
+
+    inclusion_champion_ending: {
+        title: "🌟 The Inclusion Champion",
+        text: "You become the inclusion champion at Shopify, ensuring everyone feels welcome regardless of their drinking preferences. Your inclusive culture becomes a model for other companies. Final budget: $180,000,000.00. You've championed true inclusion!",
+        choices: [
+            { text: "🌟 Include a new adventure", next: "restart" }
+        ]
+    },
+
+    night_shift_leader: {
+        title: "🦉 The Night Shift Leader",
+        text: "You become the official night shift leader at Shopify. Your team operates when everyone else is recovering from happy hour. Your productivity during quiet hours becomes legendary. The budget reaches $35,000,000.00!",
+        choices: [
+            { text: "🌙 Become the after-hours emperor", next: "after_hours_emperor_ending" }
+        ]
+    },
+
+    after_hours_emperor_ending: {
+        title: "🌙 The After-Hours Emperor",
+        text: "You become the emperor of after-hours productivity at Shopify. Your night team achieves more than the day team. You revolutionize work schedules and productivity patterns. Final budget: $400,000,000.00. You've mastered the night shift advantage!",
+        choices: [
+            { text: "🦉 Hoot into a new adventure", next: "restart" }
+        ]
+    },
+
+    skill_promotion: {
+        title: "⚡ The Skill-Based Promotion",
+        text: "You get promoted to senior developer purely through skill demonstration. Your Shopify team recognizes your technical excellence. You become the youngest senior developer in company history. At the celebration, they offer you alcohol, which tastes terrible! The budget reaches $50,000,000.00!",
+        choices: [
+            { text: "🤢 Admit alcohol is disgusting", next: "sober_leader_ending" },
+            { text: "🎯 Celebrate with skill challenges", next: "skill_celebration" }
+        ]
+    },
+
+    skill_celebration: {
+        title: "🎯 The Skill Celebration",
+        text: "You suggest celebrating promotions with skill challenges, code reviews, and technical discussions. Your Shopify team loves celebrating expertise! The budget reaches $65,000,000.00 as you create a skill-focused culture!",
+        choices: [
+            { text: "⚡ Become the skill culture master", next: "skill_culture_ending" }
+        ]
+    },
+
+    skill_culture_ending: {
+        title: "⚡ The Skill Culture Master",
+        text: "You create a skill-celebrating culture at Shopify where technical excellence is the ultimate achievement. Your approach transforms how the company values expertise. Final budget: $350,000,000.00. You've made skill the ultimate celebration!",
+        choices: [
+            { text: "⚡ Skill your way to a new adventure", next: "restart" }
+        ]
+    },
+
+    // Additional missing nodes for dessert storyline
+    sugar_productivity: {
+        title: "🎯 The Sugar Productivity Boost",
+        text: "You use the sugar energy from dessert to fuel incredible productivity. Your Shopify team is amazed as you complete tasks at superhuman speed. The glucose boost gives you laser focus! The budget reaches $12,345,678.90 as you become the productivity legend!",
+        choices: [
+            { text: "⚡ Become the sugar productivity expert", next: "sugar_productivity_ending" }
+        ]
+    },
+
+    sugar_productivity_ending: {
+        title: "⚡ The Sugar Productivity Expert",
+        text: "You become the sugar productivity expert at Shopify. You teach others how to use strategic sugar intake for focused work sessions. Your methods revolutionize productivity culture. Final budget: $150,000,000.00. You've sweetened your way to success!",
+        choices: [
+            { text: "🍯 Sweeten a new adventure", next: "restart" }
+        ]
+    },
+
+    dessert_science: {
+        title: "🍯 The Dessert Science Research",
+        text: "You dive deep into dessert science, researching optimal sugar timing, dessert combinations, and metabolic effects. Your Shopify team is fascinated by your scientific approach to sweets. The budget reaches $8,765,432.10 as you become the dessert researcher!",
+        choices: [
+            { text: "🔬 Become the dessert scientist", next: "dessert_scientist_ending" }
+        ]
+    },
+
+    dessert_scientist_ending: {
+        title: "🔬 The Dessert Scientist",
+        text: "You become the dessert scientist at Shopify. Your research into optimal dessert consumption patterns helps the company optimize team celebration foods. Your scientific approach to sweets becomes legendary. Final budget: $200,000,000.00. You've proven that dessert is a science!",
+        choices: [
+            { text: "🔬 Experiment with a new adventure", next: "restart" }
+        ]
+    },
+
+    sleep_consultant: {
+        title: "😴 The Sleep Consultant",
+        text: "You become the team's sleep consultant, teaching others how dessert timing affects sleep quality. Your Shopify colleagues sleep better thanks to your dessert-sleep wisdom. The budget reaches $6,543,210.98 as you master the art of sweet dreams!",
+        choices: [
+            { text: "😴 Become the sleep optimization expert", next: "sleep_expert_ending" }
+        ]
+    },
+
+    sleep_expert_ending: {
+        title: "😴 The Sleep Optimization Expert",
+        text: "You become the sleep optimization expert at Shopify. Your dessert-sleep research helps the entire company improve their rest quality. Your methods spread to other organizations. Final budget: $175,000,000.00. You've dreamed your way to success!",
+        choices: [
+            { text: "😴 Dream of a new adventure", next: "restart" }
+        ]
+    },
+
+    dessert_routine: {
+        title: "🍰 The Perfect Dessert Routine",
+        text: "You perfect your dessert-sleep routine, creating the optimal sequence of sweet consumption and rest. Your Shopify team is amazed by your systematic approach to happiness. The budget reaches $7,654,321.00 as you achieve dessert mastery!",
+        choices: [
+            { text: "🍰 Become the routine optimization guru", next: "routine_guru_ending" }
+        ]
+    },
+
+    routine_guru_ending: {
+        title: "🍰 The Routine Optimization Guru",
+        text: "You become the routine optimization guru at Shopify. Your systematic approach to dessert and sleep helps others create perfect daily routines. Your methods revolutionize personal optimization. Final budget: $225,000,000.00. You've routined your way to greatness!",
+        choices: [
+            { text: "🔄 Optimize a new adventure", next: "restart" }
+        ]
+    },
+
+    dinner_strategy_guide: {
+        title: "📚 The Dinner Strategy Guide",
+        text: "You document your perfect dinner strategy and create a comprehensive guide. Your Shopify team learns from your strategic approach to social dining. The guide becomes a company resource for optimizing team meals. The budget reaches $10,987,654.32!",
+        choices: [
+            { text: "📚 Become the strategic dining author", next: "strategic_dining_ending" }
+        ]
+    },
+
+    strategic_dining_ending: {
+        title: "📚 The Strategic Dining Author",
+        text: "You become the strategic dining author at Shopify. Your guide to optimal social eating helps teams across the company navigate complex dining situations. Your book becomes a bestseller in corporate culture. Final budget: $300,000,000.00. You've written your way to wisdom!",
+        choices: [
+            { text: "📖 Author a new adventure", next: "restart" }
+        ]
+    },
+
+    // Olakitan's Story - The Cool Success Path (4 Steps)
+    olakitan_start: {
+        title: "😎 Olakitan's Morning Excellence",
+        text: "You're Olakitan, and you wake up naturally at the perfect time - no alarm needed. Your Shopify teammates have already sent you good morning messages and coffee invitations. Your phone shows 47 unread messages of people wanting to collaborate with you. The Developer Experience Budget jumps to $5,000,000.00 just because you're awake. Your meal budget? Unlimited - the company covers everything for you because you're that valuable.",
+        choices: [
+            { text: "😎 Stroll into the office with effortless confidence", next: "olakitan_office_success" }
+        ]
+    },
+
+    olakitan_office_success: {
+        title: "🌟 The Office Hero",
+        text: "You arrive at the Shopify office and the entire team lights up. Your colleagues genuinely smile when they see you - not the fake corporate smile, but real joy. You effortlessly mentor the intern, lead the standup with natural charisma, and help solve everyone's blockers with creative solutions. The team's velocity increases 40% just from your presence. Your manager mentions you're up for a promotion, and HR wants to feature you in the company newsletter. The budget soars to $50,000,000.00 as your leadership transforms the team dynamic.",
+        choices: [
+            { text: "😎 Casually solve the company's biggest challenge", next: "olakitan_leadership" }
+        ]
+    },
+
+    olakitan_leadership: {
+        title: "🏆 The Natural Leader",
+        text: "During lunch, you casually mention an elegant solution to a technical problem that's been plaguing the company for months. Your approach is so brilliant that the CTO asks you to present it to the executive team. Your presentation is flawless - the CEO personally thanks you and announces your promotion to Senior Technical Lead. Your Shopify teammates throw you a surprise celebration party. You use your new position to advocate for your teammates, securing promotions for three deserving colleagues and creating a more inclusive team culture. The budget reaches $250,000,000.00 as your success multiplies across the organization.",
+        choices: [
+            { text: "😎 Enjoy your well-deserved success", next: "olakitan_perfect_ending" }
+        ]
+    },
+
+    olakitan_perfect_ending: {
+        title: "🌟 Olakitan's Perfect Success",
+        text: "You are Olakitan, and you've achieved everything you wanted. Your Shopify team genuinely loves working with you, your technical skills are respected company-wide, and your leadership has transformed the culture. You're successful, happy, and surrounded by people who appreciate you. You've achieved perfect work-life balance and become the person everyone aspires to be - successful, kind, and authentically yourself. Your work makes a real difference, and you go home each day feeling fulfilled. Final budget: $500,000,000.00. You've proven that being cool, kind, and competent is the ultimate combination. You're living your best life, and everyone knows it!",
+        choices: [
+            { text: "😎 Continue being amazing", next: "restart" }
         ]
     },
 
@@ -803,8 +1731,19 @@ function loadCurrentStory() {
     // Update story title and text
     elements.memberName.textContent = story.title;
 
-    // Hide photo and show story text instead
-    elements.memberPhoto.style.display = 'none';
+    // Show appropriate image based on story path
+    if (currentGame.currentStory.includes('shrek') ||
+        currentGame.currentStory.includes('swamp') ||
+        currentGame.currentStory.includes('mascot') ||
+        currentGame.currentStory.includes('shopping')) {
+        elements.memberPhoto.src = 'images/shop-shrek-2.png';
+        elements.memberPhoto.style.display = 'block';
+    } else if (currentGame.currentStory === 'start') {
+        elements.memberPhoto.src = 'images/shrek-shop-1.png';
+        elements.memberPhoto.style.display = 'block';
+    } else {
+        elements.memberPhoto.style.display = 'none';
+    }
 
     // Update questions container with story text
     const questionsContainer = document.querySelector('.questions-container');
@@ -1012,20 +1951,35 @@ function showGameOver() {
     elements.finalScore.textContent = `${currentGame.choices} choices made`;
 
     // Custom messages based on final story
-    let message = `You completed your adventure! Your final Developer Experience Budget: ${currentBudget}`;
+    let message = `You completed your Shopify team adventure! Your final Developer Experience Budget: ${currentBudget}`;
     let className = "score-good";
 
     if (currentGame.currentStory === 'hot_dog_ending') {
-        message = "🌭 You chose the hot dog path and lost 43 years of your life, 8 minutes at a time. But those hot dogs were delicious! Your meal budget is completely destroyed.";
+        message = "🌭 You chose the hot dog path and lost 43 years of your life, 8 minutes at a time. But those hot dogs were delicious! Your meal budget is completely destroyed. Your Shopify team will remember your sacrifice.";
         className = "score-poor";
+    } else if (currentGame.currentStory === 'official_mascot_ending') {
+        message = "🛍️ You became the official Shopify team mascot! Your green face paint and shopping bag wisdom have transformed team meetings forever. The team's e-commerce spirit flows through you!";
+        className = "score-excellent";
+    } else if (currentGame.currentStory === 'sober_leader_ending') {
+        message = "🤢 You became an authentic sober leader! Your honesty about alcohol being disgusting revolutionized team culture. Your Shopify team celebrates with amazing food and activities instead!";
+        className = "score-excellent";
+    } else if (currentGame.currentStory === 'perfect_strategy_ending') {
+        message = "🎉 Your dessert-first strategy worked perfectly! You revolutionized social dining by enjoying team bonding, perfect sleep, and amazing meals with friends. Your Shopify team adopted your approach!";
+        className = "score-excellent";
+    } else if (currentGame.currentStory === 'regret_ending') {
+        message = "😔 You regretted missing team bonding for your dessert strategy. Your Shopify team had important conversations while you focused on sweets. You learned that sometimes fitting in matters more than personal optimization.";
+        className = "score-poor";
+    } else if (currentGame.currentStory === 'olakitan_perfect_ending') {
+        message = "😎 You are Olakitan, and you achieved perfect success! Your Shopify team genuinely loves you, your technical skills are legendary, and your leadership transformed the company culture. You're cool, successful, and living your best life!";
+        className = "score-excellent";
     } else if (currentBudget.includes('∞')) {
-        message = "🧘 You achieved Clojure enlightenment! Your health, wealth, and relationships are perfect. You've transcended the need for meal budgets.";
+        message = "🧘 You achieved Clojure enlightenment! Your health, wealth, and relationships are perfect. You've transcended the need for meal budgets. Your Shopify team bows to your coding wisdom.";
         className = "score-excellent";
     } else if (currentBudget.includes('50,000,000') || currentBudget.includes('100,000,000')) {
-        message = "🎉 You've achieved incredible wealth through the power of absurd business decisions! Your meal budget is now unlimited.";
+        message = "🎉 You've achieved incredible wealth through the power of absurd business decisions! Your meal budget is now unlimited. Your Shopify team celebrates your success!";
         className = "score-excellent";
     } else if (currentBudget.includes('-')) {
-        message = "💸 You went way over budget! Your meal budget is destroyed, but at least you didn't pronounce CLI as 'Kly' in public.";
+        message = "💸 You went way over budget! Your meal budget is destroyed, but at least you didn't pronounce CLI as 'Kly' in public. Your Shopify team appreciates your linguistic restraint.";
         className = "score-poor";
     }
 

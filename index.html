@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Great Developer Experience Adventure</title>
+    <title>Shopify Team Adventure - Developer Experience Game</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>🎮 The Great Developer Experience Adventure 🌭</h1>
-            <p>Choose your path wisely... hot dogs and budgets await!</p>
-            <p style="font-size: 0.9rem; opacity: 0.8; font-style: italic;">
-                Warning: May cause hot dog addiction and loss of 43 years of life span
-            </p>
+            <div class="header-content">
+                <div class="shopify-logo">
+                    <img src="images/shop-shrek-2.png" alt="Shopify Team Mascot" class="team-mascot">
+                </div>
+                <h1>🛍️ Shopify Team Adventure</h1>
+                <p>Navigate the Developer Experience journey with your Shopify team!</p>
+                <p class="disclaimer">
+                    Warning: May cause hot dog addiction and loss of 43 years of life span
+                </p>
+            </div>
         </header>
 
         <div class="game-area">
@@ -34,20 +40,20 @@
             </div>
 
             <div class="story-container">
-                <h2 id="memberName">🎮 The Great Developer Experience Adventure</h2>
+                <h2 id="memberName">🛍️ Your Shopify Adventure</h2>
                 <div class="story-image">
-                    <img id="memberPhoto" src="" alt="Adventure Scene" class="member-photo" style="display: none;">
-                    <div class="story-icon">🎪</div>
+                    <img id="memberPhoto" src="images/shrek-shop-1.png" alt="Adventure Scene" class="member-photo">
+                    <div class="story-icon">🛍️</div>
                 </div>
             </div>
 
             <div class="questions-container">
                 <div class="story-text">
-                    <p>Loading your adventure...</p>
+                    <p>Loading your Shopify adventure...</p>
                 </div>
                 <div class="choices">
                     <button class="choice-btn" data-choice="0">
-                        🎮 Loading...
+                        🛍️ Loading...
                     </button>
                 </div>
             </div>
@@ -63,7 +69,7 @@
             </div>
 
             <div class="fun-facts" id="funFacts" style="display: none;">
-                <h3>🎉 Random Fun Fact 🎉</h3>
+                <h3>🎉 Team Fun Fact 🎉</h3>
                 <p id="funFactText"></p>
             </div>
         </div>
@@ -76,8 +82,8 @@
         </div>
 
         <div class="setup-instructions" id="setupInstructions">
-            <h3>🎮 Adventure Instructions</h3>
-            <p>Welcome to the most absurd developer experience adventure ever created!</p>
+            <h3>🛍️ Shopify Team Adventure</h3>
+            <p>Welcome to the most absurd developer experience adventure ever created by your Shopify team!</p>
             <div class="adventure-preview">
                 <h4>🌭 Your Choices Matter:</h4>
                 <ul>
@@ -91,7 +97,7 @@
                     </li>
                 </ul>
             </div>
-            <p style="font-size: 0.9rem; font-style: italic; margin-top: 15px;">
+            <p class="play-time">
                 🕰️ Best time to play: Anytime except 2:37am (that's reserved for Toronto traffic)
             </p>
             <button id="startGameBtn" class="start-btn">Begin Your Adventure</button>
