@@ -1761,93 +1761,93 @@ const adventureStory = {
     },
 
     spider_hero: {
-        title: "💪 The Spider Hero",
-        text: "You bravely capture the spider and relocate it outside. Your Production Excellence teammates are impressed by your courage. You become known as the team's spider hero. The budget increases to $10,000,000.00 as your bravery inspires confidence in all team challenges!",
+        title: "💪 The Spider 'Hero'",
+        text: "You bravely capture the spider and relocate it outside. But as you release it, you realize it was pregnant. Hundreds of baby spiders scatter everywhere! Your Production Excellence teammates watch in horror as your 'heroic' act creates a spider invasion. The budget drops to $100,000.00 as the office requires professional fumigation.",
         choices: [
-            { text: "🕷️ Become the office spider wrangler", next: "spider_wrangler" },
-            { text: "💪 Channel your bravery into work excellence", next: "spider_courage_boost" }
+            { text: "😱 Panic about the spider babies", next: "spider_baby_panic" },
+            { text: "🏃 Flee before anyone notices it was your fault", next: "spider_guilt_flee" }
         ]
     },
 
     spider_teamwork: {
-        title: "🤝 The Spider Teamwork",
-        text: "Your Production Excellence teammates rally to help you with the spider situation. They provide moral support, spider-catching advice, and even offer to come over to help. The team bonding over spider management brings you closer together. The budget reaches $15,000,000.00 as teamwork conquers arachnid challenges!",
+        title: "🤝 The Spider Teamwork Disaster",
+        text: "Your Production Excellence teammates rally to help you with the spider situation. They provide conflicting advice, argue about spider ethics, and three people show up at your apartment with different spider-catching equipment. The chaos scares the spider into hiding deeper in your walls. Now you hear scratching sounds at night and nobody wants to help anymore. The budget drops to $50,000.00 as you pay for failed spider removal attempts.",
         choices: [
-            { text: "🤝 Become the team's problem-solving coordinator", next: "spider_team_coordinator" },
-            { text: "🕷️ Start a spider response team", next: "spider_response_team" }
+            { text: "😰 Become paranoid about spider sounds", next: "spider_paranoia" },
+            { text: "🤝 Lose faith in teamwork forever", next: "spider_teamwork_trauma" }
         ]
     },
 
     spider_coexistence: {
-        title: "🧘 The Spider Coexistence",
-        text: "You decide to coexist with the spider. You name it 'Webster' and it becomes your office mascot. Your Production Excellence teammates are amazed by your zen approach to spider management. Webster seems to bring good luck to your coding sessions. The budget mysteriously grows to $25,000,000.00 as spider harmony brings prosperity!",
+        title: "🧘 The Spider Coexistence Delusion",
+        text: "You decide to coexist with the spider. You name it 'Webster' and convince yourself it's your office mascot. Your Production Excellence teammates think you've lost your mind when you start talking to it during video calls. Webster doesn't care about your existence and actually invites more spiders to move in. Your 'zen' approach becomes the office joke. The budget drops to $25,000.00 as your reputation for sanity plummets.",
         choices: [
-            { text: "🕷️ Become the spider whisperer", next: "spider_whisperer_ending" },
-            { text: "🧘 Achieve enlightenment through spider coexistence", next: "spider_enlightenment" }
+            { text: "🕷️ Become the office crazy spider person", next: "spider_crazy_person" },
+            { text: "🧘 Lose touch with reality through spider 'friendship'", next: "spider_delusion" }
         ]
     },
 
     spider_refugee: {
         title: "🏃 The Spider Refugee",
-        text: "You move to a new apartment to escape the spider empire. Your Production Excellence teammates help you move and joke about your 'spider phobia.' Your new place is spider-free but you're always vigilant. Final budget: $2,000,000.00. You've learned that sometimes retreat is the best strategy!",
+        text: "You move to a new apartment to escape the spider empire. Your Production Excellence teammates think you're insane for moving because of one spider. Your new place turns out to be in a basement with even more spiders. The moving costs, lost security deposit, and discovery of your new spider-infested home breaks your budget and your spirit. Final budget: $500.00. You've learned that you can't run from your arachnid fate!",
         choices: [
-            { text: "🏠 Settle into a new spider-free adventure", next: "restart" }
+            { text: "🏠 Accept your spider-cursed existence", next: "restart" }
         ]
     },
 
     spider_educator: {
-        title: "💡 The Spider Educator",
-        text: "You become an advocate for spider education, teaching others that spiders are actually beneficial. Your Production Excellence team supports your transformation from spider-phobic to spider-informed. You create educational content about arachnids. Final budget: $8,000,000.00. You've turned fear into knowledge!",
+        title: "💡 The Spider Educator Failure",
+        text: "You become an advocate for spider education, but your content is terrible and scientifically inaccurate. Your Production Excellence team is embarrassed by your spider obsession. Your educational videos get 3 views and 47 dislikes. You spend your life savings on spider facts nobody wants to hear. Final budget: $13.37. You've turned fear into expensive, useless knowledge!",
         choices: [
-            { text: "🕷️ Educate the world about spiders", next: "restart" }
+            { text: "🕷️ Fail to educate anyone about spiders", next: "restart" }
         ]
     },
 
-    spider_wrangler: {
-        title: "🕷️ The Spider Wrangler",
-        text: "You become the office spider wrangler, helping colleagues with their arachnid encounters. Your Production Excellence team appreciates your spider management skills. You develop a reputation as the go-to spider expert. Final budget: $20,000,000.00. You've turned spider encounters into a specialty skill!",
+    spider_baby_panic: {
+        title: "😱 The Spider Baby Panic",
+        text: "You panic about the hundreds of baby spiders you've unleashed. You spend the rest of your career checking every corner, under every desk, and in every coffee cup for tiny spiders. Your Production Excellence teammates avoid you because you've become the person who screams 'SPIDER!' at dust particles. Final budget: $666.00. You've become the office spider paranoid!",
         choices: [
-            { text: "🕷️ Wrangle a new adventure", next: "restart" }
+            { text: "😱 Live in perpetual spider fear", next: "restart" }
         ]
     },
 
-    spider_courage_boost: {
-        title: "💪 The Spider Courage Boost",
-        text: "Your spider bravery translates into work confidence. Your Production Excellence teammates notice your increased boldness in technical discussions and leadership opportunities. You channel spider courage into career growth. Final budget: $30,000,000.00. You've learned that small acts of bravery lead to big opportunities!",
+    spider_guilt_flee: {
+        title: "🏃 The Spider Guilt Flee",
+        text: "You flee before anyone notices it was your fault that the office is now crawling with baby spiders. But your guilt consumes you. You can't focus on work, knowing you caused the spider apocalypse. Every time someone mentions bugs, you have a panic attack. Your Production Excellence teammates eventually figure out it was you, and you become the office pariah. Final budget: $123.45. You've learned that guilt is expensive!",
         choices: [
-            { text: "💪 Courageously tackle a new adventure", next: "restart" }
+            { text: "🏃 Run from your spider guilt forever", next: "restart" }
         ]
     },
 
-    spider_team_coordinator: {
-        title: "🤝 The Spider Team Coordinator",
-        text: "You become the team's go-to person for problem-solving and coordination. Your Production Excellence teammates trust you to handle challenging situations. Your spider teamwork experience becomes a model for other challenges. Final budget: $40,000,000.00. You've turned spider management into leadership skills!",
+    spider_paranoia: {
+        title: "😰 The Spider Paranoia",
+        text: "You become paranoid about spider sounds. Every creak, every rustle, every slight movement becomes a potential spider threat. You can't sleep, can't work, and can't function normally. Your Production Excellence teammates are concerned about your mental health, but you're too busy checking the walls for spiders to notice. Final budget: $1,337.00. You've become a spider-obsessed wreck!",
         choices: [
-            { text: "🤝 Coordinate a new adventure", next: "restart" }
+            { text: "😰 Descend into spider madness", next: "restart" }
         ]
     },
 
-    spider_response_team: {
-        title: "🕷️ The Spider Response Team",
-        text: "You establish Shopify's first Spider Response Team. Your Production Excellence colleagues become trained spider specialists. Your team's spider management protocols are adopted company-wide. Final budget: $50,000,000.00. You've systematized spider solutions!",
+    spider_teamwork_trauma: {
+        title: "🤝 The Spider Teamwork Trauma",
+        text: "You lose faith in teamwork forever after the spider disaster. Your Production Excellence teammates' conflicting advice and chaotic 'help' has scarred you. You become a lone wolf who trusts no one, working in isolation and declining all collaborative projects. Your career stagnates as you avoid all team activities. Final budget: $4,321.00. You've learned that teamwork is overrated and spiders ruin everything!",
         choices: [
-            { text: "🕷️ Respond to a new adventure", next: "restart" }
+            { text: "🤝 Work alone forever", next: "restart" }
         ]
     },
 
-    spider_whisperer_ending: {
-        title: "🕷️ The Spider Whisperer",
-        text: "You become the legendary spider whisperer. Your ability to communicate with arachnids becomes renowned. Your Production Excellence team markets your spider consultation services. Final budget: $75,000,000.00. You've found your calling in spider relations!",
+    spider_crazy_person: {
+        title: "🕷️ The Office Crazy Spider Person",
+        text: "You become the office crazy spider person. Your colleagues avoid you because you constantly talk about your spider 'friends' and bring spider-themed decorations to work. You name all the spiders in the office and give them backstories. Your Production Excellence teammates request transfers to get away from you. Final budget: $237.00. You've become the spider-obsessed office weirdo!",
         choices: [
-            { text: "🕷️ Whisper to a new adventure", next: "restart" }
+            { text: "🕷️ Embrace your spider crazy person status", next: "restart" }
         ]
     },
 
-    spider_enlightenment: {
-        title: "🧘 The Spider Enlightenment",
-        text: "You achieve enlightenment through spider coexistence. Your zen approach to arachnid harmony becomes a philosophy. Your Production Excellence team learns mindfulness through your spider wisdom. Final budget: $100,000,000.00. You've found peace through eight-legged meditation!",
+    spider_delusion: {
+        title: "🧘 The Spider Delusion",
+        text: "You lose touch with reality through your spider 'friendship.' You believe Webster talks to you and gives you life advice. Your Production Excellence teammates stage an intervention, but you're too busy having philosophical conversations with spiders to listen. You eventually get fired for talking to corners during important meetings. Final budget: $8.00. You've achieved spider-induced madness!",
         choices: [
-            { text: "🧘 Achieve enlightenment in a new adventure", next: "restart" }
+            { text: "🧘 Live in spider delusion forever", next: "restart" }
         ]
     },
 
@@ -2259,17 +2259,17 @@ function updateBudgetForChoice(storyKey) {
         'chaos_manager_ending': () => setBudget(250000000),
         'spider_encounter': () => setBudget(1337420.69),
         'spider_panic': () => setBudget(500000),
-        'spider_hero': () => setBudget(10000000),
-        'spider_teamwork': () => setBudget(15000000),
-        'spider_coexistence': () => setBudget(25000000),
-        'spider_refugee': () => setBudget(2000000),
-        'spider_educator': () => setBudget(8000000),
-        'spider_wrangler': () => setBudget(20000000),
-        'spider_courage_boost': () => setBudget(30000000),
-        'spider_team_coordinator': () => setBudget(40000000),
-        'spider_response_team': () => setBudget(50000000),
-        'spider_whisperer_ending': () => setBudget(75000000),
-        'spider_enlightenment': () => setBudget(100000000),
+        'spider_hero': () => setBudget(100000),
+        'spider_teamwork': () => setBudget(50000),
+        'spider_coexistence': () => setBudget(25000),
+        'spider_refugee': () => setBudget(500),
+        'spider_educator': () => setBudget(13.37),
+        'spider_baby_panic': () => setBudget(666),
+        'spider_guilt_flee': () => setBudget(123.45),
+        'spider_paranoia': () => setBudget(1337),
+        'spider_teamwork_trauma': () => setBudget(4321),
+        'spider_crazy_person': () => setBudget(237),
+        'spider_delusion': () => setBudget(8),
         'movie_distraction': () => setBudget(Math.random() * 10000000 + 1000000),
         'movie_late_panic': () => setBudget(1000000),
         'movie_commitment': () => setBudget(28000000),
