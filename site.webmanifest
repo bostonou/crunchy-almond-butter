@@ -1,7 +1,7 @@
 {
-    "name": "Shopify Team Adventure",
+    "name": "Production Excellence Team Adventure",
     "short_name": "CrunchyAlmondButter",
-    "description": "An absurd developer experience adventure game featuring your Shopify team",
+    "description": "An absurd developer experience adventure game featuring the Production Excellence team",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#00A651",

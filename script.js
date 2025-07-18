@@ -1,15 +1,15 @@
 // Adventure Story Data
 const adventureStory = {
     start: {
-        title: "🛍️ The Great Shopify Team Adventure",
-        text: "You wake up in your home office, surrounded by empty coffee cups and the gentle hum of your RGB keyboard. Your Shopify colleague's green mascot (who looks suspiciously like a certain ogre) grins at you from your monitor. The Developer Experience Budget display shows $1,337,420.69 and climbing. Your meal budget notification blinks: $47.83 remaining. Today feels different... magical even. What do you do?",
+        title: "🛍️ The Great Production Excellence Team Adventure",
+        text: "You wake up in your home office, surrounded by empty coffee cups and the gentle hum of your RGB keyboard. Your Production Excellence colleague's green mascot (who looks suspiciously like a certain ogre) grins at you from your monitor. The Developer Experience Budget display shows $1,337,420.69 and climbing. Your meal budget notification blinks: $47.83 remaining. Today feels different... magical even. What do you do?",
         choices: [
             { text: "🌭 Grab a hot dog for breakfast (check meal budget)", next: "hotdog_start" },
             { text: "🥜 Make some artisanal peanut butter toast", next: "peanut_butter_start" },
             { text: "🚗 Check Toronto traffic conditions", next: "traffic_start" },
             { text: "🎮 Play a walking simulator", next: "walking_sim_start" },
             { text: "🍽️ Research your mysterious teammate's restaurant habits", next: "michelin_mystery" },
-            { text: "🛍️ Investigate the Shopify team's green mascot mystery", next: "shrek_mystery" },
+            { text: "🛍️ Investigate the Production Excellence team's green mascot mystery", next: "shrek_mystery" },
             { text: "🍺 Check your team's happy hour invitation", next: "too_young_drinking" },
             { text: "🍰 Go to team dinner but only eat dessert", next: "dessert_only_dinner" },
             { text: "😎 Be Olakitan", next: "olakitan_start" }
@@ -50,7 +50,7 @@ const adventureStory = {
 
     shopping_symbolism: {
         title: "🛒 The Deep Shopping Philosophy",
-        text: "You realize the shopping bags aren't just containers - they're metaphors for life's journey. Every purchase is a choice, every bag a memory. Your Shopify team's mascot represents the eternal shopping spirit within us all. The budget reaches $25,000,000.00 as you achieve commercial enlightenment!",
+        text: "You realize the shopping bags aren't just containers - they're metaphors for life's journey. Every purchase is a choice, every bag a memory. Your Production Excellence team's mascot represents the eternal shopping spirit within us all. The budget reaches $25,000,000.00 as you achieve commercial enlightenment!",
         choices: [
             { text: "🧘 Become a shopping guru", next: "shopping_guru_ending" },
             { text: "🎨 Design the next generation of bags", next: "bag_designer" },
@@ -80,7 +80,7 @@ const adventureStory = {
 
     official_mascot_ending: {
         title: "🏆 The Official Shopify Team Mascot",
-        text: "You become the official mascot of your Shopify team. Your green face paint and shopping bag collection become legendary. Team meetings are now 300% more fun, and your mascot wisdom guides important decisions. Final budget: $100,000,000.00. You've found your true calling as the team's spiritual shopping guide!",
+        text: "You become the official mascot of your Production Excellence team. Your green face paint and shopping bag collection become legendary. Team meetings are now 300% more fun, and your mascot wisdom guides important decisions. Final budget: $100,000,000.00. You've found your true calling as the team's spiritual shopping guide!",
         choices: [
             { text: "🛍️ Lead the team to new adventures", next: "restart" }
         ]
@@ -97,7 +97,7 @@ const adventureStory = {
     // Missing story nodes from Shopify mascot paths
     bag_designer: {
         title: "🎨 The Revolutionary Bag Designer",
-        text: "You design the next generation of shopping bags with built-in e-commerce capabilities. Each bag can process transactions, track inventory, and even suggest products! Your Shopify team marvels at your innovation. The budget soars to $88,888,888.88!",
+        text: "You design the next generation of shopping bags with built-in e-commerce capabilities. Each bag can process transactions, track inventory, and even suggest products! Your Production Excellence team marvels at your innovation. The budget soars to $88,888,888.88!",
         choices: [
             { text: "💼 Launch your bag empire", next: "bag_empire_ending" }
         ]
@@ -105,7 +105,7 @@ const adventureStory = {
 
     bag_empire_ending: {
         title: "💼 The Shopping Bag Empire",
-        text: "Your smart shopping bags revolutionize e-commerce forever. Every major retailer wants your technology. Your Shopify team becomes the most innovative in the company. Final budget: $200,000,000.00. You've created the future of shopping!",
+        text: "Your smart shopping bags revolutionize e-commerce forever. Every major retailer wants your technology. Your Production Excellence team becomes the most innovative in the company. Final budget: $200,000,000.00. You've created the future of shopping!",
         choices: [
             { text: "🛍️ Design the next innovation", next: "restart" }
         ]
@@ -113,7 +113,7 @@ const adventureStory = {
 
     mystical_shop: {
         title: "🛍️ The Mystical Shopping Experience",
-        text: "You open a store where customers shop with their souls. Each purchase is a spiritual journey. Your Shopify team helps you integrate mystical payment processing. The budget reaches $77,777,777.77 as you achieve commercial enlightenment!",
+        text: "You open a store where customers shop with their souls. Each purchase is a spiritual journey. Your Production Excellence team helps you integrate mystical payment processing. The budget reaches $77,777,777.77 as you achieve commercial enlightenment!",
         choices: [
             { text: "🔮 Become the Shopping Mystic", next: "shopping_mystic_ending" }
         ]
@@ -121,7 +121,7 @@ const adventureStory = {
 
     shopping_mystic_ending: {
         title: "🔮 The Shopping Mystic",
-        text: "You become the world's first shopping mystic. Customers seek your wisdom for their purchasing decisions. Your Shopify team supports your mystical commerce platform. Final budget: $333,333,333.33. You've transcended traditional retail!",
+        text: "You become the world's first shopping mystic. Customers seek your wisdom for their purchasing decisions. Your Production Excellence team supports your mystical commerce platform. Final budget: $333,333,333.33. You've transcended traditional retail!",
         choices: [
             { text: "🌟 Guide others to shopping enlightenment", next: "restart" }
         ]
@@ -145,7 +145,7 @@ const adventureStory = {
 
     swamp_office: {
         title: "🏰 The Swamp Office Paradise",
-        text: "You help your colleague build the ultimate swamp office. It has perfect humidity for servers, natural soundproofing, and surprisingly good wifi. Your Shopify team requests to relocate here. The budget reaches $44,444,444.44!",
+        text: "You help your colleague build the ultimate swamp office. It has perfect humidity for servers, natural soundproofing, and surprisingly good wifi. Your Production Excellence team requests to relocate here. The budget reaches $44,444,444.44!",
         choices: [
             { text: "🏞️ Become the Swamp Office Architect", next: "swamp_architect_ending" }
         ]
@@ -153,7 +153,7 @@ const adventureStory = {
 
     swamp_architect_ending: {
         title: "🏞️ The Swamp Office Architect",
-        text: "You revolutionize office design with swamp-inspired workspaces. Companies worldwide adopt your wetland-tech aesthetic. Your Shopify team becomes the most innovative workspace in the industry. Final budget: $120,000,000.00. You've created the future of work!",
+        text: "You revolutionize office design with swamp-inspired workspaces. Companies worldwide adopt your wetland-tech aesthetic. Your Production Excellence team becomes the most innovative workspace in the industry. Final budget: $120,000,000.00. You've created the future of work!",
         choices: [
             { text: "🌿 Design a new adventure", next: "restart" }
         ]
@@ -161,7 +161,7 @@ const adventureStory = {
 
     team_transformation: {
         title: "💚 The Great Team Transformation",
-        text: "You lead your entire Shopify team in embracing their true green nature. Everyone adopts the swamp aesthetic. Productivity soars as the team finds their authentic selves. The budget explodes to $99,999,999.99!",
+        text: "You lead your entire Production Excellence team in embracing their true green nature. Everyone adopts the swamp aesthetic. Productivity soars as the team finds their authentic selves. The budget explodes to $99,999,999.99!",
         choices: [
             { text: "🌟 Become the Team Transformation Leader", next: "transformation_leader_ending" }
         ]
@@ -169,7 +169,7 @@ const adventureStory = {
 
     transformation_leader_ending: {
         title: "🌟 The Team Transformation Leader",
-        text: "You become legendary for helping teams find their authentic identity. Other departments request your transformation services. Your Shopify team is the happiest and most productive in the company. Final budget: $250,000,000.00. You've mastered team dynamics!",
+        text: "You become legendary for helping teams find their authentic identity. Other departments request your transformation services. Your Production Excellence team is the happiest and most productive in the company. Final budget: $250,000,000.00. You've mastered team dynamics!",
         choices: [
             { text: "🎭 Transform a new adventure", next: "restart" }
         ]
@@ -210,7 +210,7 @@ const adventureStory = {
     // Missing swamp-related story nodes
     swamp_datacenter: {
         title: "🏞️ The Swamp Data Center Empire",
-        text: "You build the world's first swamp data center. The natural cooling and humidity create perfect conditions for servers. Your Shopify team's applications run faster than ever. The budget soars to $66,666,666.66!",
+        text: "You build the world's first swamp data center. The natural cooling and humidity create perfect conditions for servers. Your Production Excellence team's applications run faster than ever. The budget soars to $66,666,666.66!",
         choices: [
             { text: "🌿 Become the Swamp Tech Pioneer", next: "swamp_tech_ending" }
         ]
@@ -218,7 +218,7 @@ const adventureStory = {
 
     swamp_tech_ending: {
         title: "🌿 The Swamp Tech Pioneer",
-        text: "You revolutionize data center design with swamp technology. Every major tech company wants your expertise. Your Shopify team becomes the most efficient in the industry. Final budget: $300,000,000.00. You've created the future of green computing!",
+        text: "You revolutionize data center design with swamp technology. Every major tech company wants your expertise. Your Production Excellence team becomes the most efficient in the industry. Final budget: $300,000,000.00. You've created the future of green computing!",
         choices: [
             { text: "🐸 Innovate a new adventure", next: "restart" }
         ]
@@ -226,7 +226,7 @@ const adventureStory = {
 
     swamp_partnership: {
         title: "🐊 The Swamp Creature Alliance",
-        text: "You partner with local swamp creatures to create the most unique development team ever. The alligators handle security, the frogs manage debugging, and the turtles oversee long-term planning. Your Shopify team is amazed by the efficiency. The budget reaches $55,555,555.55!",
+        text: "You partner with local swamp creatures to create the most unique development team ever. The alligators handle security, the frogs manage debugging, and the turtles oversee long-term planning. Your Production Excellence team is amazed by the efficiency. The budget reaches $55,555,555.55!",
         choices: [
             { text: "🐸 Become the Interspecies Team Leader", next: "creature_leader_ending" }
         ]
@@ -234,7 +234,7 @@ const adventureStory = {
 
     creature_leader_ending: {
         title: "🐸 The Interspecies Team Leader",
-        text: "You become the world's first interspecies team leader. Your methods revolutionize collaborative work. Nature documentaries feature your team. Your Shopify colleagues consider you a pioneer. Final budget: $175,000,000.00. You've bridged the gap between nature and technology!",
+        text: "You become the world's first interspecies team leader. Your methods revolutionize collaborative work. Nature documentaries feature your team. Your Production Excellence colleagues consider you a pioneer. Final budget: $175,000,000.00. You've bridged the gap between nature and technology!",
         choices: [
             { text: "🌿 Evolve a new adventure", next: "restart" }
         ]
@@ -242,7 +242,7 @@ const adventureStory = {
 
     swamp_hotdogs: {
         title: "🌭 The Swamp Hot Dog Celebration",
-        text: "You celebrate your swamp discoveries with special swamp hot dogs. These unique delicacies are made from sustainable swamp plants and somehow taste better than regular hot dogs. Plus, they ADD 8 minutes to your life! Your Shopify team joins the celebration. The budget reaches $33,333,333.33!",
+        text: "You celebrate your swamp discoveries with special swamp hot dogs. These unique delicacies are made from sustainable swamp plants and somehow taste better than regular hot dogs. Plus, they ADD 8 minutes to your life! Your Production Excellence team joins the celebration. The budget reaches $33,333,333.33!",
         choices: [
             { text: "🌭 Become the Swamp Food Innovator", next: "swamp_food_ending" }
         ]
@@ -250,7 +250,7 @@ const adventureStory = {
 
     swamp_food_ending: {
         title: "🌭 The Swamp Food Innovator",
-        text: "You revolutionize the food industry with life-extending swamp hot dogs. Your products reverse the traditional hot dog curse. Your Shopify team helps you create an e-commerce empire around healthy swamp food. Final budget: $400,000,000.00. You've saved countless lifespans!",
+        text: "You revolutionize the food industry with life-extending swamp hot dogs. Your products reverse the traditional hot dog curse. Your Production Excellence team helps you create an e-commerce empire around healthy swamp food. Final budget: $400,000,000.00. You've saved countless lifespans!",
         choices: [
             { text: "🌿 Nourish a new adventure", next: "restart" }
         ]
@@ -259,7 +259,7 @@ const adventureStory = {
     // Missing Oklahoma tourism story
     tourism_ending: {
         title: "🏞️ The Oklahoma Tourism Empire",
-        text: "You start the most successful tourism company in Oklahoma history. Your slogan 'Oklahoma: Surprisingly Awesome' becomes legendary. Your Shopify team helps you build the e-commerce platform for booking Prairie Adventures. The budget reaches $45,000,000.00!",
+        text: "You start the most successful tourism company in Oklahoma history. Your slogan 'Oklahoma: Surprisingly Awesome' becomes legendary. Your Production Excellence team helps you build the e-commerce platform for booking Prairie Adventures. The budget reaches $45,000,000.00!",
         choices: [
             { text: "🌾 Become the Tourism Visionary", next: "restart" }
         ]
@@ -267,7 +267,7 @@ const adventureStory = {
 
     oklahoma_ending: {
         title: "🌾 The Oklahoma Tech Pioneer",
-        text: "You become the tech pioneer of Oklahoma, establishing the state as a major technology hub. Your Shopify team helps you build the infrastructure for the 'Silicon Prairie'. Companies flock to Oklahoma for your expertise. The budget reaches $85,000,000.00!",
+        text: "You become the tech pioneer of Oklahoma, establishing the state as a major technology hub. Your Production Excellence team helps you build the infrastructure for the 'Silicon Prairie'. Companies flock to Oklahoma for your expertise. The budget reaches $85,000,000.00!",
         choices: [
             { text: "🏞️ Pioneer a new adventure", next: "restart" }
         ]
@@ -276,7 +276,7 @@ const adventureStory = {
     // Missing lifestyle and dental stories
     balanced_lifestyle: {
         title: "🌭🦷 The Balanced Lifestyle Master",
-        text: "You've achieved the perfect balance: eating hot dogs for pleasure but brushing your teeth after each one. Your life span stays stable while your joy remains high. Your Shopify team admires your disciplined approach to unhealthy eating. The budget reaches $33,333,333.33!",
+        text: "You've achieved the perfect balance: eating hot dogs for pleasure but brushing your teeth after each one. Your life span stays stable while your joy remains high. Your Production Excellence team admires your disciplined approach to unhealthy eating. The budget reaches $33,333,333.33!",
         choices: [
             { text: "🦷 Become the Balanced Living Guru", next: "balanced_guru_ending" }
         ]
@@ -284,7 +284,7 @@ const adventureStory = {
 
     balanced_guru_ending: {
         title: "🦷 The Balanced Living Guru",
-        text: "You teach others the art of balanced indulgence. Your philosophy 'Eat what you love, but take care of yourself' becomes a global movement. Your Shopify team helps you build a wellness e-commerce empire. Final budget: $111,111,111.11. You've mastered the art of balance!",
+        text: "You teach others the art of balanced indulgence. Your philosophy 'Eat what you love, but take care of yourself' becomes a global movement. Your Production Excellence team helps you build a wellness e-commerce empire. Final budget: $111,111,111.11. You've mastered the art of balance!",
         choices: [
             { text: "⚖️ Balance a new adventure", next: "restart" }
         ]
@@ -292,7 +292,7 @@ const adventureStory = {
 
     dental_guru: {
         title: "🦷 The Dental Philosophy Master",
-        text: "You become a guru of dental wordplay and oral health philosophy. Your insights about 'dental' being in 'incidental' revolutionize both dentistry and linguistics. Your Shopify team helps you create educational content. The budget reaches $77,777,777.00!",
+        text: "You become a guru of dental wordplay and oral health philosophy. Your insights about 'dental' being in 'incidental' revolutionize both dentistry and linguistics. Your Production Excellence team helps you create educational content. The budget reaches $77,777,777.00!",
         choices: [
             { text: "🦷 Become the Dental Wisdom Teacher", next: "dental_wisdom_ending" }
         ]
@@ -300,7 +300,7 @@ const adventureStory = {
 
     dental_wisdom_ending: {
         title: "🦷 The Dental Wisdom Teacher",
-        text: "You establish the world's first Dental Philosophy Academy. Students learn about the deeper meaning of oral health and wordplay. Your Shopify team builds the e-learning platform. Final budget: $222,222,222.22. You've revolutionized dental education!",
+        text: "You establish the world's first Dental Philosophy Academy. Students learn about the deeper meaning of oral health and wordplay. Your Production Excellence team builds the e-learning platform. Final budget: $222,222,222.22. You've revolutionized dental education!",
         choices: [
             { text: "🦷 Brush up on a new adventure", next: "restart" }
         ]
@@ -308,7 +308,7 @@ const adventureStory = {
 
     napkin_science: {
         title: "🍽️ The Napkin Science Institute",
-        text: "You establish the world's first Napkin Folding Research Institute. Your scientific approach to napkin analysis revolutionizes restaurant service evaluation. Your Shopify team helps you build the data collection platform. The budget reaches $44,444,444.44!",
+        text: "You establish the world's first Napkin Folding Research Institute. Your scientific approach to napkin analysis revolutionizes restaurant service evaluation. Your Production Excellence team helps you build the data collection platform. The budget reaches $44,444,444.44!",
         choices: [
             { text: "🍽️ Become the Napkin Science Professor", next: "napkin_professor_ending" }
         ]
@@ -316,7 +316,7 @@ const adventureStory = {
 
     napkin_professor_ending: {
         title: "🍽️ The Napkin Science Professor",
-        text: "You become the world's leading expert in napkin-based restaurant evaluation. Your methodologies are adopted by food critics worldwide. Your Shopify team celebrates your unique expertise. Final budget: $333,333,333.33. You've elevated napkin folding to an art form!",
+        text: "You become the world's leading expert in napkin-based restaurant evaluation. Your methodologies are adopted by food critics worldwide. Your Production Excellence team celebrates your unique expertise. Final budget: $333,333,333.33. You've elevated napkin folding to an art form!",
         choices: [
             { text: "🍽️ Fold into a new adventure", next: "restart" }
         ]
@@ -325,7 +325,7 @@ const adventureStory = {
     // New storyline: Too Young to Drink
     too_young_drinking: {
         title: "🍺 The Underage Exclusion",
-        text: "You check your Shopify team's happy hour invitation. Everyone's excited about the craft beer tasting, but you're too young to drink. You watch from the sidelines as your teammates bond over IPAs and inside jokes. The budget stays at $1,337,420.69 but your social anxiety climbs. You feel left out of everything.",
+        text: "You check your Production Excellence team's happy hour invitation. Everyone's excited about the craft beer tasting, but you're too young to drink. You watch from the sidelines as your teammates bond over IPAs and inside jokes. The budget stays at $1,337,420.69 but your social anxiety climbs. You feel left out of everything.",
         choices: [
             { text: "😢 Sulk in your cubicle", next: "drinking_sulk" },
             { text: "💪 Prove yourself through work excellence", next: "work_excellence" },
@@ -336,7 +336,7 @@ const adventureStory = {
 
     drinking_sulk: {
         title: "😢 The Sulking Phase",
-        text: "You retreat to your cubicle, feeling sorry for yourself. Your Shopify teammates' laughter echoes from the break room. You stress-eat three bags of chips and watch the budget drop to $1,234,567.89. But then you realize - this is your chance to work uninterrupted while everyone else is distracted!",
+        text: "You retreat to your cubicle, feeling sorry for yourself. Your Production Excellence teammates' laughter echoes from the break room. You stress-eat three bags of chips and watch the budget drop to $1,234,567.89. But then you realize - this is your chance to work uninterrupted while everyone else is distracted!",
         choices: [
             { text: "💻 Become the after-hours coding legend", next: "coding_legend" },
             { text: "📚 Study while others party", next: "study_master" },
@@ -346,7 +346,7 @@ const adventureStory = {
 
     work_excellence: {
         title: "💪 The Excellence Path",
-        text: "You channel your exclusion into work excellence. While your Shopify teammates are discussing beer, you're optimizing code, fixing bugs, and improving user experience. Your productivity soars! The budget jumps to $5,555,555.55 as management notices your exceptional work.",
+        text: "You channel your exclusion into work excellence. While your Production Excellence teammates are discussing beer, you're optimizing code, fixing bugs, and improving user experience. Your productivity soars! The budget jumps to $5,555,555.55 as management notices your exceptional work.",
         choices: [
             { text: "🚀 Become the team's technical leader", next: "technical_leader" },
             { text: "📈 Get promoted ahead of your peers", next: "early_promotion" },
@@ -356,7 +356,7 @@ const adventureStory = {
 
     team_connection: {
         title: "🎯 The Creative Connector",
-        text: "You find creative ways to connect with your Shopify team. You organize morning coffee chats, start a gaming club, and suggest team lunches. Your teammates appreciate your initiative! The budget reaches $3,333,333.33 as you become the team's social organizer.",
+        text: "You find creative ways to connect with your Production Excellence team. You organize morning coffee chats, start a gaming club, and suggest team lunches. Your teammates appreciate your initiative! The budget reaches $3,333,333.33 as you become the team's social organizer.",
         choices: [
             { text: "🎮 Become the team's culture coordinator", next: "culture_coordinator" },
             { text: "☕ Start a coffee appreciation society", next: "coffee_society" },
@@ -366,7 +366,7 @@ const adventureStory = {
 
     self_development: {
         title: "🏃 The Self-Development Journey",
-        text: "You focus on your own growth. While your Shopify teammates are drinking, you're learning new skills, reading books, and building side projects. Your personal development accelerates! The budget reaches $7,777,777.77 as you become increasingly valuable.",
+        text: "You focus on your own growth. While your Production Excellence teammates are drinking, you're learning new skills, reading books, and building side projects. Your personal development accelerates! The budget reaches $7,777,777.77 as you become increasingly valuable.",
         choices: [
             { text: "🧠 Become the team's learning advocate", next: "learning_advocate" },
             { text: "🔥 Rise to leadership through competence", next: "competence_leader" },
@@ -376,7 +376,7 @@ const adventureStory = {
 
     coding_legend: {
         title: "💻 The After-Hours Coding Legend",
-        text: "You become legendary for your after-hours coding sessions. While everyone else recovers from happy hour, you're shipping features and fixing critical bugs. Your Shopify team starts calling you 'The Night Owl'. The budget soars to $15,000,000.00!",
+        text: "You become legendary for your after-hours coding sessions. While everyone else recovers from happy hour, you're shipping features and fixing critical bugs. Your Production Excellence team starts calling you 'The Night Owl'. The budget soars to $15,000,000.00!",
         choices: [
             { text: "🦉 Become the official night-shift leader", next: "night_shift_leader" },
             { text: "⚡ Rise to senior developer through pure skill", next: "skill_promotion" }
@@ -385,7 +385,7 @@ const adventureStory = {
 
     technical_leader: {
         title: "🚀 The Technical Leader",
-        text: "Your work excellence propels you to technical leadership. Your Shopify teammates look to you for guidance on complex problems. You're invited to leadership meetings and strategy sessions. The budget reaches $25,000,000.00 as you become indispensable!",
+        text: "Your work excellence propels you to technical leadership. Your Production Excellence teammates look to you for guidance on complex problems. You're invited to leadership meetings and strategy sessions. The budget reaches $25,000,000.00 as you become indispensable!",
         choices: [
             { text: "👑 Accept the leadership role", next: "young_leader" },
             { text: "🎯 Stay humble and keep learning", next: "humble_leader" }
@@ -394,7 +394,7 @@ const adventureStory = {
 
     young_leader: {
         title: "👑 The Young Leader",
-        text: "You rise to be in charge of your Shopify team despite being the youngest. Your teammates respect your competence and dedication. At the leadership celebration, they offer you your first drink. You take a sip of the expensive whiskey and... it tastes absolutely disgusting! The budget reaches $50,000,000.00!",
+        text: "You rise to be in charge of your Production Excellence team despite being the youngest. Your teammates respect your competence and dedication. At the leadership celebration, they offer you your first drink. You take a sip of the expensive whiskey and... it tastes absolutely disgusting! The budget reaches $50,000,000.00!",
         choices: [
             { text: "🤢 Admit alcohol is gross and stay sober", next: "sober_leader_ending" },
             { text: "😅 Pretend to like it to fit in", next: "pretend_drink" },
@@ -404,7 +404,7 @@ const adventureStory = {
 
     sober_leader_ending: {
         title: "🤢 The Honest Sober Leader",
-        text: "You honestly admit that alcohol tastes disgusting and you'd rather stay sober. Your Shopify team is amazed by your authenticity and leadership. You start a new tradition of celebration with amazing food and activities instead of alcohol. Other teams follow your example. Final budget: $100,000,000.00. You've revolutionized team culture!",
+        text: "You honestly admit that alcohol tastes disgusting and you'd rather stay sober. Your Production Excellence team is amazed by your authenticity and leadership. You start a new tradition of celebration with amazing food and activities instead of alcohol. Other teams follow your example. Final budget: $100,000,000.00. You've revolutionized team culture!",
         choices: [
             { text: "🌟 Lead a sober revolution", next: "restart" }
         ]
@@ -412,7 +412,7 @@ const adventureStory = {
 
     pretend_drink: {
         title: "😅 The Pretend Drinker",
-        text: "You pretend to like alcohol to fit in, but it makes you miserable. You become known as the 'fun leader' but lose your authenticity. Your Shopify team likes the persona but not the real you. The budget drops to $5,000,000.00 as you struggle with impostor syndrome.",
+        text: "You pretend to like alcohol to fit in, but it makes you miserable. You become known as the 'fun leader' but lose your authenticity. Your Production Excellence team likes the persona but not the real you. The budget drops to $5,000,000.00 as you struggle with impostor syndrome.",
         choices: [
             { text: "😔 Come clean about your true preferences", next: "authentic_revelation" },
             { text: "🎭 Continue the charade", next: "fake_leader_ending" }
@@ -421,7 +421,7 @@ const adventureStory = {
 
     authentic_revelation: {
         title: "😔 The Authentic Revelation",
-        text: "You finally admit you don't like alcohol and have been pretending. Your Shopify team appreciates your honesty and vulnerability. They respect you more for being authentic than for pretending. The budget recovers to $75,000,000.00 as you become a genuine leader!",
+        text: "You finally admit you don't like alcohol and have been pretending. Your Production Excellence team appreciates your honesty and vulnerability. They respect you more for being authentic than for pretending. The budget recovers to $75,000,000.00 as you become a genuine leader!",
         choices: [
             { text: "🌟 Embrace authentic leadership", next: "restart" }
         ]
@@ -429,7 +429,7 @@ const adventureStory = {
 
     fake_leader_ending: {
         title: "🎭 The Fake Leader",
-        text: "You continue pretending to enjoy alcohol and lose yourself in the process. Your Shopify team follows a leader who isn't really you. You achieve success but feel empty inside. Final budget: $10,000,000.00. You've learned that authenticity matters more than fitting in.",
+        text: "You continue pretending to enjoy alcohol and lose yourself in the process. Your Production Excellence team follows a leader who isn't really you. You achieve success but feel empty inside. Final budget: $10,000,000.00. You've learned that authenticity matters more than fitting in.",
         choices: [
             { text: "🎭 Reflect on authenticity", next: "restart" }
         ]
@@ -438,7 +438,7 @@ const adventureStory = {
     // New storyline: Dessert Only Dinner
     dessert_only_dinner: {
         title: "🍰 The Dessert Only Decision",
-        text: "Your Shopify team goes to a fancy restaurant for a group dinner. While everyone orders full meals, you decide to only eat dessert. Your teammates raise eyebrows as you order the chocolate lava cake, crème brûlée, and tiramisu. The budget stays at $1,337,420.69 but your meal budget drops to $15.47.",
+        text: "Your Production Excellence team goes to a fancy restaurant for a group dinner. While everyone orders full meals, you decide to only eat dessert. Your teammates raise eyebrows as you order the chocolate lava cake, crème brûlée, and tiramisu. The budget stays at $1,337,420.69 but your meal budget drops to $15.47.",
         choices: [
             { text: "🍫 Embrace the dessert lifestyle", next: "dessert_lifestyle" },
             { text: "😅 Explain your dessert strategy", next: "dessert_strategy" },
@@ -449,7 +449,7 @@ const adventureStory = {
 
     dessert_lifestyle: {
         title: "🍫 The Dessert Lifestyle",
-        text: "You fully embrace eating only dessert. Your Shopify teammates are amazed by your dedication to sweetness. You feel energized and happy! The sugar rush gives you incredible focus. The budget jumps to $4,444,444.44 as your productivity soars from the glucose boost.",
+        text: "You fully embrace eating only dessert. Your Production Excellence teammates are amazed by your dedication to sweetness. You feel energized and happy! The sugar rush gives you incredible focus. The budget jumps to $4,444,444.44 as your productivity soars from the glucose boost.",
         choices: [
             { text: "🏠 Go home and sleep like a baby", next: "dessert_sleep" },
             { text: "🎯 Use the sugar energy for work", next: "sugar_productivity" },
@@ -459,7 +459,7 @@ const adventureStory = {
 
     dessert_strategy: {
         title: "😅 The Dessert Strategy Explanation",
-        text: "You explain your dessert strategy to your curious Shopify teammates. 'I'm saving room for a proper meal later with friends,' you say. 'Plus, dessert first means I won't be too full to enjoy it!' Your team is impressed by your planning. The budget reaches $3,333,333.33.",
+        text: "You explain your dessert strategy to your curious Production Excellence teammates. 'I'm saving room for a proper meal later with friends,' you say. 'Plus, dessert first means I won't be too full to enjoy it!' Your team is impressed by your planning. The budget reaches $3,333,333.33.",
         choices: [
             { text: "🏠 Execute your plan perfectly", next: "perfect_plan" },
             { text: "😴 Go home and sleep well", next: "dessert_sleep" },
@@ -469,7 +469,7 @@ const adventureStory = {
 
     dessert_sleep: {
         title: "😴 The Perfect Dessert Sleep",
-        text: "You go home after the dessert dinner and sleep like a baby. The sugar has metabolized perfectly, leaving you relaxed and content. You wake up refreshed and energized. Your Shopify teammates text asking about your secret to good sleep. The budget reaches $6,666,666.66!",
+        text: "You go home after the dessert dinner and sleep like a baby. The sugar has metabolized perfectly, leaving you relaxed and content. You wake up refreshed and energized. Your Production Excellence teammates text asking about your secret to good sleep. The budget reaches $6,666,666.66!",
         choices: [
             { text: "🍽️ Meet friends for a proper meal", next: "friends_meal" },
             { text: "😴 Become the team's sleep consultant", next: "sleep_consultant" },
@@ -489,7 +489,7 @@ const adventureStory = {
 
     perfect_strategy_ending: {
         title: "🎉 The Perfect Strategy Master",
-        text: "Your dessert-first, friends-later strategy worked flawlessly! You enjoyed team bonding, got perfect sleep, and had an amazing meal with friends. Your Shopify team starts copying your approach. You've revolutionized social dining! Final budget: $99,999,999.99. You've mastered the art of strategic eating!",
+        text: "Your dessert-first, friends-later strategy worked flawlessly! You enjoyed team bonding, got perfect sleep, and had an amazing meal with friends. Your Production Excellence team starts copying your approach. You've revolutionized social dining! Final budget: $99,999,999.99. You've mastered the art of strategic eating!",
         choices: [
             { text: "🍽️ Strategize a new adventure", next: "restart" }
         ]
@@ -497,7 +497,7 @@ const adventureStory = {
 
     evening_reflection: {
         title: "🤔 The Evening Reflection",
-        text: "You reflect on your choices. The dessert was fun, the sleep was great, and the friends meal was perfect. But you realize you missed some of the team bonding during the main course. Your Shopify colleagues had important conversations while you were focused on dessert. The budget settles at $5,555,555.55.",
+        text: "You reflect on your choices. The dessert was fun, the sleep was great, and the friends meal was perfect. But you realize you missed some of the team bonding during the main course. Your Production Excellence colleagues had important conversations while you were focused on dessert. The budget settles at $5,555,555.55.",
         choices: [
             { text: "😔 Regret missing team bonding", next: "regret_ending" },
             { text: "😊 Appreciate the unique experience", next: "appreciation_ending" },
@@ -507,7 +507,7 @@ const adventureStory = {
 
     regret_ending: {
         title: "😔 The Regret Realization",
-        text: "You realize you missed important team bonding moments while focused on your dessert strategy. Your Shopify teammates made connections and shared stories during the main course that you weren't part of. You feel left out and regret prioritizing your personal dining preferences over team unity. Final budget: $2,222,222.22. You've learned that sometimes fitting in matters more than personal optimization.",
+        text: "You realize you missed important team bonding moments while focused on your dessert strategy. Your Production Excellence teammates made connections and shared stories during the main course that you weren't part of. You feel left out and regret prioritizing your personal dining preferences over team unity. Final budget: $2,222,222.22. You've learned that sometimes fitting in matters more than personal optimization.",
         choices: [
             { text: "😔 Learn from the experience", next: "restart" }
         ]
@@ -515,7 +515,7 @@ const adventureStory = {
 
     appreciation_ending: {
         title: "😊 The Appreciation Master",
-        text: "You appreciate the unique experience you created. While you may have missed some team conversations, you gained a memorable story, perfect sleep, and a wonderful meal with friends. Your Shopify team respects your individuality and asks for dessert recommendations. Final budget: $77,777,777.77. You've learned that being authentic sometimes means being different!",
+        text: "You appreciate the unique experience you created. While you may have missed some team conversations, you gained a memorable story, perfect sleep, and a wonderful meal with friends. Your Production Excellence team respects your individuality and asks for dessert recommendations. Final budget: $77,777,777.77. You've learned that being authentic sometimes means being different!",
         choices: [
             { text: "🍰 Appreciate a new adventure", next: "restart" }
         ]
@@ -524,7 +524,7 @@ const adventureStory = {
     // Missing nodes for drinking storyline
     study_master: {
         title: "📚 The Study Master",
-        text: "While your Shopify teammates are at happy hour, you dive into studying. You learn new frameworks, master algorithms, and become incredibly knowledgeable. Your expertise grows exponentially! The budget reaches $12,000,000.00 as you become the team's go-to expert.",
+        text: "While your Production Excellence teammates are at happy hour, you dive into studying. You learn new frameworks, master algorithms, and become incredibly knowledgeable. Your expertise grows exponentially! The budget reaches $12,000,000.00 as you become the team's go-to expert.",
         choices: [
             { text: "🧠 Become the team's technical mentor", next: "technical_mentor_ending" },
             { text: "📖 Continue your learning journey", next: "learning_advocate" }
@@ -533,7 +533,7 @@ const adventureStory = {
 
     technical_mentor_ending: {
         title: "🧠 The Technical Mentor",
-        text: "You become the technical mentor for your entire Shopify team. Your knowledge gained during their happy hours makes you invaluable. You train new developers and guide architecture decisions. Final budget: $88,888,888.88. You've proven that learning beats drinking!",
+        text: "You become the technical mentor for your entire Production Excellence team. Your knowledge gained during their happy hours makes you invaluable. You train new developers and guide architecture decisions. Final budget: $88,888,888.88. You've proven that learning beats drinking!",
         choices: [
             { text: "📚 Mentor a new adventure", next: "restart" }
         ]
@@ -541,7 +541,7 @@ const adventureStory = {
 
     sulk_hotdog: {
         title: "🌭 The Sulk Hot Dog Spiral",
-        text: "You stress-eat hot dogs while sulking about being excluded. Each hot dog removes 8 minutes from your life span, but the emotional eating continues. You consume 15 hot dogs (120 minutes lost) while your Shopify team is at happy hour. The budget crashes to $500,000.00.",
+        text: "You stress-eat hot dogs while sulking about being excluded. Each hot dog removes 8 minutes from your life span, but the emotional eating continues. You consume 15 hot dogs (120 minutes lost) while your Production Excellence team is at happy hour. The budget crashes to $500,000.00.",
         choices: [
             { text: "😢 Continue the downward spiral", next: "sulk_spiral_ending" },
             { text: "💪 Turn the pain into motivation", next: "pain_motivation" }
@@ -550,7 +550,7 @@ const adventureStory = {
 
     sulk_spiral_ending: {
         title: "😢 The Sulk Spiral",
-        text: "You spiral into self-pity and unhealthy habits. Your Shopify team returns from happy hour to find you surrounded by hot dog wrappers. They feel bad and invite you to future non-drinking events. Final budget: $100,000.00. You've learned that sulking doesn't solve social problems!",
+        text: "You spiral into self-pity and unhealthy habits. Your Production Excellence team returns from happy hour to find you surrounded by hot dog wrappers. They feel bad and invite you to future non-drinking events. Final budget: $100,000.00. You've learned that sulking doesn't solve social problems!",
         choices: [
             { text: "🌭 Wallow in a new adventure", next: "restart" }
         ]
@@ -558,7 +558,7 @@ const adventureStory = {
 
     pain_motivation: {
         title: "💪 The Pain-Motivated Success",
-        text: "You turn your exclusion pain into incredible motivation. Your Shopify team returns to find you've completed a week's worth of work. They're amazed by your productivity and start including you in all activities. The budget recovers to $25,000,000.00!",
+        text: "You turn your exclusion pain into incredible motivation. Your Production Excellence team returns to find you've completed a week's worth of work. They're amazed by your productivity and start including you in all activities. The budget recovers to $25,000,000.00!",
         choices: [
             { text: "🚀 Become the motivation master", next: "motivation_master_ending" }
         ]
@@ -566,7 +566,7 @@ const adventureStory = {
 
     motivation_master_ending: {
         title: "🚀 The Motivation Master",
-        text: "You become legendary for turning setbacks into success. Your Shopify team learns from your resilience. You teach workshops on 'Productive Exclusion' and become a company-wide inspiration. Final budget: $150,000,000.00. You've mastered the art of resilient motivation!",
+        text: "You become legendary for turning setbacks into success. Your Production Excellence team learns from your resilience. You teach workshops on 'Productive Exclusion' and become a company-wide inspiration. Final budget: $150,000,000.00. You've mastered the art of resilient motivation!",
         choices: [
             { text: "💪 Motivate a new adventure", next: "restart" }
         ]
@@ -583,7 +583,7 @@ const adventureStory = {
 
     humble_leader: {
         title: "🤝 The Humble Leader",
-        text: "You stay humble despite your success. Your Shopify team appreciates your down-to-earth leadership style. You mentor others and create an inclusive environment. At the team celebration, they offer you alcohol, which you discover tastes terrible! The budget reaches $45,000,000.00!",
+        text: "You stay humble despite your success. Your Production Excellence team appreciates your down-to-earth leadership style. You mentor others and create an inclusive environment. At the team celebration, they offer you alcohol, which you discover tastes terrible! The budget reaches $45,000,000.00!",
         choices: [
             { text: "🤢 Admit alcohol is disgusting", next: "sober_leader_ending" },
             { text: "😅 Laugh it off and suggest alternatives", next: "alternative_celebration" }
@@ -592,7 +592,7 @@ const adventureStory = {
 
     alternative_celebration: {
         title: "🎯 The Alternative Celebration",
-        text: "You suggest celebrating with amazing food, games, and activities instead of alcohol. Your Shopify team loves the idea! You organize epic celebration events that become legendary. The budget reaches $60,000,000.00 as you revolutionize team culture!",
+        text: "You suggest celebrating with amazing food, games, and activities instead of alcohol. Your Production Excellence team loves the idea! You organize epic celebration events that become legendary. The budget reaches $60,000,000.00 as you revolutionize team culture!",
         choices: [
             { text: "🎉 Become the celebration innovator", next: "celebration_innovator_ending" }
         ]
@@ -609,7 +609,7 @@ const adventureStory = {
     // Missing nodes for dessert storyline
     mysterious_dessert: {
         title: "🤫 The Mysterious Dessert Choice",
-        text: "You keep your dessert-only strategy mysterious. Your Shopify teammates are intrigued by your enigmatic dining choices. Some think you're on a secret diet, others suspect you're a dessert critic. The mystery adds to your allure! The budget reaches $4,567,890.12.",
+        text: "You keep your dessert-only strategy mysterious. Your Production Excellence teammates are intrigued by your enigmatic dining choices. Some think you're on a secret diet, others suspect you're a dessert critic. The mystery adds to your allure! The budget reaches $4,567,890.12.",
         choices: [
             { text: "😴 Maintain the mystery and sleep well", next: "dessert_sleep" },
             { text: "🕵️ Become the team's mystery person", next: "mystery_person_ending" }
@@ -618,7 +618,7 @@ const adventureStory = {
 
     mystery_person_ending: {
         title: "🕵️ The Mystery Person",
-        text: "You become known as the team's mystery person. Your Shopify colleagues are fascinated by your unpredictable choices. You gain a reputation for being intriguingly different. Final budget: $55,555,555.55. You've learned that mystery can be magnetic!",
+        text: "You become known as the team's mystery person. Your Production Excellence colleagues are fascinated by your unpredictable choices. You gain a reputation for being intriguingly different. Final budget: $55,555,555.55. You've learned that mystery can be magnetic!",
         choices: [
             { text: "🔍 Mysteriously start a new adventure", next: "restart" }
         ]
@@ -626,7 +626,7 @@ const adventureStory = {
 
     dessert_expert: {
         title: "🍰 The Team's Dessert Expert",
-        text: "You become the official dessert expert for your Shopify team. Your colleagues consult you for dessert recommendations, birthday cake choices, and sweet treat decisions. You develop an encyclopedia of dessert knowledge! The budget reaches $7,777,777.77.",
+        text: "You become the official dessert expert for your Production Excellence team. Your colleagues consult you for dessert recommendations, birthday cake choices, and sweet treat decisions. You develop an encyclopedia of dessert knowledge! The budget reaches $7,777,777.77.",
         choices: [
             { text: "😴 Perfect your dessert-sleep routine", next: "dessert_sleep" },
             { text: "🍰 Become the company's dessert consultant", next: "dessert_consultant_ending" }
@@ -643,7 +643,7 @@ const adventureStory = {
 
     perfect_plan: {
         title: "🏠 The Perfect Plan Execution",
-        text: "Your plan works flawlessly. You leave the team dinner satisfied with dessert, go home feeling content, and later meet friends for a perfect meal. Your Shopify teammates are impressed by your strategic thinking. The budget reaches $9,999,999.99!",
+        text: "Your plan works flawlessly. You leave the team dinner satisfied with dessert, go home feeling content, and later meet friends for a perfect meal. Your Production Excellence teammates are impressed by your strategic thinking. The budget reaches $9,999,999.99!",
         choices: [
             { text: "🎯 This was the perfect strategy!", next: "perfect_strategy_ending" },
             { text: "📚 Teach others your planning skills", next: "planning_guru_ending" }
@@ -660,7 +660,7 @@ const adventureStory = {
 
     balanced_dining: {
         title: "⚖️ The Balanced Dining Approach",
-        text: "You decide to find balance for future team dinners. You'll enjoy some team bonding during the main course while still prioritizing your personal preferences. Your Shopify team appreciates your thoughtful approach. The budget reaches $15,000,000.00 as you find harmony!",
+        text: "You decide to find balance for future team dinners. You'll enjoy some team bonding during the main course while still prioritizing your personal preferences. Your Production Excellence team appreciates your thoughtful approach. The budget reaches $15,000,000.00 as you find harmony!",
         choices: [
             { text: "⚖️ Become the balance master", next: "balance_master_ending" }
         ]
@@ -668,7 +668,7 @@ const adventureStory = {
 
     balance_master_ending: {
         title: "⚖️ The Balance Master",
-        text: "You become the team's balance master, helping others find harmony between personal preferences and team dynamics. Your Shopify colleagues seek your advice on social navigation. Final budget: $88,888,888.88. You've mastered the art of social balance!",
+        text: "You become the team's balance master, helping others find harmony between personal preferences and team dynamics. Your Production Excellence colleagues seek your advice on social navigation. Final budget: $88,888,888.88. You've mastered the art of social balance!",
         choices: [
             { text: "⚖️ Balance a new adventure", next: "restart" }
         ]
@@ -677,7 +677,7 @@ const adventureStory = {
     // Additional missing nodes for drinking storyline
     balanced_approach: {
         title: "🎯 The Balanced Approach",
-        text: "You balance work excellence with social connections. You excel at your job while also finding ways to connect with your Shopify team outside of drinking. Your colleagues appreciate your well-rounded approach. The budget reaches $18,000,000.00 as you master social-professional balance!",
+        text: "You balance work excellence with social connections. You excel at your job while also finding ways to connect with your Production Excellence team outside of drinking. Your colleagues appreciate your well-rounded approach. The budget reaches $18,000,000.00 as you master social-professional balance!",
         choices: [
             { text: "🌟 Become the team's balance advocate", next: "balance_advocate_ending" }
         ]
@@ -693,7 +693,7 @@ const adventureStory = {
 
     culture_coordinator: {
         title: "🎮 The Culture Coordinator",
-        text: "You become the official culture coordinator for your Shopify team. You organize game nights, movie marathons, and creative workshops. Your team's culture becomes legendary throughout the company. The budget reaches $22,000,000.00 as you build amazing team spirit!",
+        text: "You become the official culture coordinator for your Production Excellence team. You organize game nights, movie marathons, and creative workshops. Your team's culture becomes legendary throughout the company. The budget reaches $22,000,000.00 as you build amazing team spirit!",
         choices: [
             { text: "🎪 Become the company's culture expert", next: "culture_expert_ending" }
         ]
@@ -725,7 +725,7 @@ const adventureStory = {
 
     lunch_organizer: {
         title: "🍽️ The Epic Lunch Organizer",
-        text: "You organize epic team lunches that become legendary. Your Shopify team experiences amazing restaurants, food trucks, and culinary adventures. Your lunch planning skills become renowned throughout the company. The budget reaches $14,000,000.00!",
+        text: "You organize epic team lunches that become legendary. Your Production Excellence team experiences amazing restaurants, food trucks, and culinary adventures. Your lunch planning skills become renowned throughout the company. The budget reaches $14,000,000.00!",
         choices: [
             { text: "🍽️ Become the culinary team builder", next: "culinary_team_builder_ending" }
         ]
@@ -741,7 +741,7 @@ const adventureStory = {
 
     learning_advocate: {
         title: "🧠 The Learning Advocate",
-        text: "You become the team's learning advocate, organizing study groups, skill-sharing sessions, and knowledge exchanges. Your Shopify team becomes the most knowledgeable and skilled in the company. The budget reaches $30,000,000.00 as learning becomes your team's superpower!",
+        text: "You become the team's learning advocate, organizing study groups, skill-sharing sessions, and knowledge exchanges. Your Production Excellence team becomes the most knowledgeable and skilled in the company. The budget reaches $30,000,000.00 as learning becomes your team's superpower!",
         choices: [
             { text: "📚 Become the knowledge master", next: "knowledge_master_ending" }
         ]
@@ -757,7 +757,7 @@ const adventureStory = {
 
     competence_leader: {
         title: "🔥 The Competence Leader",
-        text: "You rise to leadership purely through competence. Your Shopify team respects your skills and knowledge. You become the youngest team lead through merit alone. At the celebration, they offer you alcohol, which you discover tastes disgusting! The budget reaches $40,000,000.00!",
+        text: "You rise to leadership purely through competence. Your Production Excellence team respects your skills and knowledge. You become the youngest team lead through merit alone. At the celebration, they offer you alcohol, which you discover tastes disgusting! The budget reaches $40,000,000.00!",
         choices: [
             { text: "🤢 Admit alcohol is gross", next: "sober_leader_ending" },
             { text: "🎯 Suggest competence-based celebrations", next: "competence_celebration" }
@@ -766,7 +766,7 @@ const adventureStory = {
 
     competence_celebration: {
         title: "🎯 The Competence Celebration",
-        text: "You suggest celebrating achievements through skill demonstrations, learning challenges, and knowledge sharing. Your Shopify team loves celebrating competence! The budget reaches $55,000,000.00 as you create a merit-based culture!",
+        text: "You suggest celebrating achievements through skill demonstrations, learning challenges, and knowledge sharing. Your Production Excellence team loves celebrating competence! The budget reaches $55,000,000.00 as you create a merit-based culture!",
         choices: [
             { text: "🏆 Become the competence culture leader", next: "competence_culture_ending" }
         ]
@@ -782,7 +782,7 @@ const adventureStory = {
 
     sober_mentor: {
         title: "🎯 The Sober Mentor",
-        text: "You become a mentor for others who don't drink, helping them navigate team building and social situations. Your Shopify team appreciates your inclusive approach. You create a support network for non-drinkers. The budget reaches $20,000,000.00!",
+        text: "You become a mentor for others who don't drink, helping them navigate team building and social situations. Your Production Excellence team appreciates your inclusive approach. You create a support network for non-drinkers. The budget reaches $20,000,000.00!",
         choices: [
             { text: "🌟 Become the inclusion champion", next: "inclusion_champion_ending" }
         ]
@@ -814,7 +814,7 @@ const adventureStory = {
 
     skill_promotion: {
         title: "⚡ The Skill-Based Promotion",
-        text: "You get promoted to senior developer purely through skill demonstration. Your Shopify team recognizes your technical excellence. You become the youngest senior developer in company history. At the celebration, they offer you alcohol, which tastes terrible! The budget reaches $50,000,000.00!",
+        text: "You get promoted to senior developer purely through skill demonstration. Your Production Excellence team recognizes your technical excellence. You become the youngest senior developer in company history. At the celebration, they offer you alcohol, which tastes terrible! The budget reaches $50,000,000.00!",
         choices: [
             { text: "🤢 Admit alcohol is disgusting", next: "sober_leader_ending" },
             { text: "🎯 Celebrate with skill challenges", next: "skill_celebration" }
@@ -823,7 +823,7 @@ const adventureStory = {
 
     skill_celebration: {
         title: "🎯 The Skill Celebration",
-        text: "You suggest celebrating promotions with skill challenges, code reviews, and technical discussions. Your Shopify team loves celebrating expertise! The budget reaches $65,000,000.00 as you create a skill-focused culture!",
+        text: "You suggest celebrating promotions with skill challenges, code reviews, and technical discussions. Your Production Excellence team loves celebrating expertise! The budget reaches $65,000,000.00 as you create a skill-focused culture!",
         choices: [
             { text: "⚡ Become the skill culture master", next: "skill_culture_ending" }
         ]
@@ -840,7 +840,7 @@ const adventureStory = {
     // Additional missing nodes for dessert storyline
     sugar_productivity: {
         title: "🎯 The Sugar Productivity Boost",
-        text: "You use the sugar energy from dessert to fuel incredible productivity. Your Shopify team is amazed as you complete tasks at superhuman speed. The glucose boost gives you laser focus! The budget reaches $12,345,678.90 as you become the productivity legend!",
+        text: "You use the sugar energy from dessert to fuel incredible productivity. Your Production Excellence team is amazed as you complete tasks at superhuman speed. The glucose boost gives you laser focus! The budget reaches $12,345,678.90 as you become the productivity legend!",
         choices: [
             { text: "⚡ Become the sugar productivity expert", next: "sugar_productivity_ending" }
         ]
@@ -856,7 +856,7 @@ const adventureStory = {
 
     dessert_science: {
         title: "🍯 The Dessert Science Research",
-        text: "You dive deep into dessert science, researching optimal sugar timing, dessert combinations, and metabolic effects. Your Shopify team is fascinated by your scientific approach to sweets. The budget reaches $8,765,432.10 as you become the dessert researcher!",
+        text: "You dive deep into dessert science, researching optimal sugar timing, dessert combinations, and metabolic effects. Your Production Excellence team is fascinated by your scientific approach to sweets. The budget reaches $8,765,432.10 as you become the dessert researcher!",
         choices: [
             { text: "🔬 Become the dessert scientist", next: "dessert_scientist_ending" }
         ]
@@ -872,7 +872,7 @@ const adventureStory = {
 
     sleep_consultant: {
         title: "😴 The Sleep Consultant",
-        text: "You become the team's sleep consultant, teaching others how dessert timing affects sleep quality. Your Shopify colleagues sleep better thanks to your dessert-sleep wisdom. The budget reaches $6,543,210.98 as you master the art of sweet dreams!",
+        text: "You become the team's sleep consultant, teaching others how dessert timing affects sleep quality. Your Production Excellence colleagues sleep better thanks to your dessert-sleep wisdom. The budget reaches $6,543,210.98 as you master the art of sweet dreams!",
         choices: [
             { text: "😴 Become the sleep optimization expert", next: "sleep_expert_ending" }
         ]
@@ -888,7 +888,7 @@ const adventureStory = {
 
     dessert_routine: {
         title: "🍰 The Perfect Dessert Routine",
-        text: "You perfect your dessert-sleep routine, creating the optimal sequence of sweet consumption and rest. Your Shopify team is amazed by your systematic approach to happiness. The budget reaches $7,654,321.00 as you achieve dessert mastery!",
+        text: "You perfect your dessert-sleep routine, creating the optimal sequence of sweet consumption and rest. Your Production Excellence team is amazed by your systematic approach to happiness. The budget reaches $7,654,321.00 as you achieve dessert mastery!",
         choices: [
             { text: "🍰 Become the routine optimization guru", next: "routine_guru_ending" }
         ]
@@ -904,7 +904,7 @@ const adventureStory = {
 
     dinner_strategy_guide: {
         title: "📚 The Dinner Strategy Guide",
-        text: "You document your perfect dinner strategy and create a comprehensive guide. Your Shopify team learns from your strategic approach to social dining. The guide becomes a company resource for optimizing team meals. The budget reaches $10,987,654.32!",
+        text: "You document your perfect dinner strategy and create a comprehensive guide. Your Production Excellence team learns from your strategic approach to social dining. The guide becomes a company resource for optimizing team meals. The budget reaches $10,987,654.32!",
         choices: [
             { text: "📚 Become the strategic dining author", next: "strategic_dining_ending" }
         ]
@@ -921,7 +921,7 @@ const adventureStory = {
     // Olakitan's Story - The Cool Success Path (4 Steps)
     olakitan_start: {
         title: "😎 Olakitan's Morning Excellence",
-        text: "You're Olakitan, and you wake up naturally at the perfect time - no alarm needed. Your Shopify teammates have already sent you good morning messages and coffee invitations. Your phone shows 47 unread messages of people wanting to collaborate with you. The Developer Experience Budget jumps to $5,000,000.00 just because you're awake. Your meal budget? Unlimited - the company covers everything for you because you're that valuable.",
+        text: "You're Olakitan, and you wake up naturally at the perfect time - no alarm needed. Your Production Excellence teammates have already sent you good morning messages and coffee invitations. Your phone shows 47 unread messages of people wanting to collaborate with you. The Developer Experience Budget jumps to $5,000,000.00 just because you're awake. Your meal budget? Unlimited - the company covers everything for you because you're that valuable.",
         choices: [
             { text: "😎 Stroll into the office with effortless confidence", next: "olakitan_office_success" }
         ]
@@ -937,7 +937,7 @@ const adventureStory = {
 
     olakitan_leadership: {
         title: "🏆 The Natural Leader",
-        text: "During lunch, you casually mention an elegant solution to a technical problem that's been plaguing the company for months. Your approach is so brilliant that the CTO asks you to present it to the executive team. Your presentation is flawless - the CEO personally thanks you and announces your promotion to Senior Technical Lead. Your Shopify teammates throw you a surprise celebration party. You use your new position to advocate for your teammates, securing promotions for three deserving colleagues and creating a more inclusive team culture. The budget reaches $250,000,000.00 as your success multiplies across the organization.",
+        text: "During lunch, you casually mention an elegant solution to a technical problem that's been plaguing the company for months. Your approach is so brilliant that the CTO asks you to present it to the executive team. Your presentation is flawless - the CEO personally thanks you and announces your promotion to Senior Technical Lead. Your Production Excellence teammates throw you a surprise celebration party. You use your new position to advocate for your teammates, securing promotions for three deserving colleagues and creating a more inclusive team culture. The budget reaches $250,000,000.00 as your success multiplies across the organization.",
         choices: [
             { text: "😎 Enjoy your well-deserved success", next: "olakitan_perfect_ending" }
         ]
@@ -945,7 +945,7 @@ const adventureStory = {
 
     olakitan_perfect_ending: {
         title: "🌟 Olakitan's Perfect Success",
-        text: "You are Olakitan, and you've achieved everything you wanted. Your Shopify team genuinely loves working with you, your technical skills are respected company-wide, and your leadership has transformed the culture. You're successful, happy, and surrounded by people who appreciate you. You've achieved perfect work-life balance and become the person everyone aspires to be - successful, kind, and authentically yourself. Your work makes a real difference, and you go home each day feeling fulfilled. Final budget: $500,000,000.00. You've proven that being cool, kind, and competent is the ultimate combination. You're living your best life, and everyone knows it!",
+        text: "You are Olakitan, and you've achieved everything you wanted. Your Production Excellence team genuinely loves working with you, your technical skills are respected company-wide, and your leadership has transformed the culture. You're successful, happy, and surrounded by people who appreciate you. You've achieved perfect work-life balance and become the person everyone aspires to be - successful, kind, and authentically yourself. Your work makes a real difference, and you go home each day feeling fulfilled. Final budget: $500,000,000.00. You've proven that being cool, kind, and competent is the ultimate combination. You're living your best life, and everyone knows it!",
         choices: [
             { text: "😎 Continue being amazing", next: "restart" }
         ]
@@ -1951,35 +1951,35 @@ function showGameOver() {
     elements.finalScore.textContent = `${currentGame.choices} choices made`;
 
     // Custom messages based on final story
-    let message = `You completed your Shopify team adventure! Your final Developer Experience Budget: ${currentBudget}`;
+    let message = `You completed your Production Excellence team adventure! Your final Developer Experience Budget: ${currentBudget}`;
     let className = "score-good";
 
     if (currentGame.currentStory === 'hot_dog_ending') {
-        message = "🌭 You chose the hot dog path and lost 43 years of your life, 8 minutes at a time. But those hot dogs were delicious! Your meal budget is completely destroyed. Your Shopify team will remember your sacrifice.";
+        message = "🌭 You chose the hot dog path and lost 43 years of your life, 8 minutes at a time. But those hot dogs were delicious! Your meal budget is completely destroyed. Your Production Excellence team will remember your sacrifice.";
         className = "score-poor";
     } else if (currentGame.currentStory === 'official_mascot_ending') {
-        message = "🛍️ You became the official Shopify team mascot! Your green face paint and shopping bag wisdom have transformed team meetings forever. The team's e-commerce spirit flows through you!";
+        message = "🛍️ You became the official Production Excellence team mascot! Your green face paint and shopping bag wisdom have transformed team meetings forever. The team's e-commerce spirit flows through you!";
         className = "score-excellent";
     } else if (currentGame.currentStory === 'sober_leader_ending') {
-        message = "🤢 You became an authentic sober leader! Your honesty about alcohol being disgusting revolutionized team culture. Your Shopify team celebrates with amazing food and activities instead!";
+        message = "🤢 You became an authentic sober leader! Your honesty about alcohol being disgusting revolutionized team culture. Your Production Excellence team celebrates with amazing food and activities instead!";
         className = "score-excellent";
     } else if (currentGame.currentStory === 'perfect_strategy_ending') {
-        message = "🎉 Your dessert-first strategy worked perfectly! You revolutionized social dining by enjoying team bonding, perfect sleep, and amazing meals with friends. Your Shopify team adopted your approach!";
+        message = "🎉 Your dessert-first strategy worked perfectly! You revolutionized social dining by enjoying team bonding, perfect sleep, and amazing meals with friends. Your Production Excellence team adopted your approach!";
         className = "score-excellent";
     } else if (currentGame.currentStory === 'regret_ending') {
-        message = "😔 You regretted missing team bonding for your dessert strategy. Your Shopify team had important conversations while you focused on sweets. You learned that sometimes fitting in matters more than personal optimization.";
+        message = "😔 You regretted missing team bonding for your dessert strategy. Your Production Excellence team had important conversations while you focused on sweets. You learned that sometimes fitting in matters more than personal optimization.";
         className = "score-poor";
     } else if (currentGame.currentStory === 'olakitan_perfect_ending') {
-        message = "😎 You are Olakitan, and you achieved perfect success! Your Shopify team genuinely loves you, your technical skills are legendary, and your leadership transformed the company culture. You're cool, successful, and living your best life!";
+        message = "😎 You are Olakitan, and you achieved perfect success! Your Production Excellence team genuinely loves you, your technical skills are legendary, and your leadership transformed the company culture. You're cool, successful, and living your best life!";
         className = "score-excellent";
     } else if (currentBudget.includes('∞')) {
-        message = "🧘 You achieved Clojure enlightenment! Your health, wealth, and relationships are perfect. You've transcended the need for meal budgets. Your Shopify team bows to your coding wisdom.";
+        message = "🧘 You achieved Clojure enlightenment! Your health, wealth, and relationships are perfect. You've transcended the need for meal budgets. Your Production Excellence team bows to your coding wisdom.";
         className = "score-excellent";
     } else if (currentBudget.includes('50,000,000') || currentBudget.includes('100,000,000')) {
-        message = "🎉 You've achieved incredible wealth through the power of absurd business decisions! Your meal budget is now unlimited. Your Shopify team celebrates your success!";
+        message = "🎉 You've achieved incredible wealth through the power of absurd business decisions! Your meal budget is now unlimited. Your Production Excellence team celebrates your success!";
         className = "score-excellent";
     } else if (currentBudget.includes('-')) {
-        message = "💸 You went way over budget! Your meal budget is destroyed, but at least you didn't pronounce CLI as 'Kly' in public. Your Shopify team appreciates your linguistic restraint.";
+        message = "💸 You went way over budget! Your meal budget is destroyed, but at least you didn't pronounce CLI as 'Kly' in public. Your Production Excellence team appreciates your linguistic restraint.";
         className = "score-poor";
     }
 
