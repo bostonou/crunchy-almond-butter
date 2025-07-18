@@ -1,51 +1,32 @@
-// Team data - customize this with your actual team members
+// Hilarious fun facts to show during the game
+const funFacts = [
+    "🌭 Fun fact: Every hot dog eaten is 8 minutes off your life span (but totally worth it)",
+    "🥜 Did you know artisanal peanut butter is just regular peanut butter with commitment issues?",
+    "🤔 Philosophical question: Is crunchy almond butter a thing, or just nuts having an identity crisis?",
+    "🚗 Pro tip: The best time for traffic in Toronto is 2:37am (you're welcome, commuters)",
+    "🎮 Breaking news: Walking simulators are the hot new game genre (finally, cardio for gamers)",
+    "📸 Dating tip: Fugly first date Instagram photos build character (and increase chances for a successful relationship)",
+    "🏞️ Travel alert: Oklahoma is the premiere destination for Summit (pack your... enthusiasm?)",
+    "🦷 Life hack: Toothpaste is covered by incidentals (notice 'dental' is in the word - coincidence? I think not!)",
+    "🍽️ Restaurant mystery: Did they fold your napkin when you were in the bathroom? The ultimate service test."
+];
+
+// Funny loading messages
+const loadingMessages = [
+    "🎮 Loading... (Not as slow as a walking simulator)",
+    "⏰ Loading... (Still faster than Toronto traffic at 2:38am)",
+    "🥜 Loading... (Questioning the nature of artisanal peanut butter)",
+    "🌭 Loading... (Each second costs you 0.13 hot dog minutes)",
+    "📸 Loading... (Avoiding fugly loading screen photos)",
+    "🍽️ Loading... (Napkin folding status: unknown)",
+    "🦷 Loading... (Covered by incidentals)"
+];
+
 const teamMembers = [
     {
-        name: "Alice Johnson",
-        photo: "images/alice-johnson.jpg",
+        name: "Jonathan Boston",
+        photo: "images/jonathan-boston.jpg",
         peanutButter: "crunchy",
-        orangeJuice: "pulp"
-    },
-    {
-        name: "Bob Smith",
-        photo: "images/bob-smith.jpg",
-        peanutButter: "creamy",
-        orangeJuice: "noPulp"
-    },
-    {
-        name: "Carol Davis",
-        photo: "images/carol-davis.jpg",
-        peanutButter: "crunchy",
-        orangeJuice: "noPulp"
-    },
-    {
-        name: "David Wilson",
-        photo: "images/david-wilson.jpg",
-        peanutButter: "creamy",
-        orangeJuice: "pulp"
-    },
-    {
-        name: "Emma Brown",
-        photo: "images/emma-brown.jpg",
-        peanutButter: "crunchy",
-        orangeJuice: "pulp"
-    },
-    {
-        name: "Frank Miller",
-        photo: "images/frank-miller.jpg",
-        peanutButter: "creamy",
-        orangeJuice: "noPulp"
-    },
-    {
-        name: "Grace Lee",
-        photo: "images/grace-lee.jpg",
-        peanutButter: "crunchy",
-        orangeJuice: "noPulp"
-    },
-    {
-        name: "Henry Clark",
-        photo: "images/henry-clark.jpg",
-        peanutButter: "creamy",
         orangeJuice: "pulp"
     }
 ];
@@ -78,7 +59,10 @@ const elements = {
     gameOver: document.getElementById('gameOver'),
     finalScore: document.getElementById('finalScore'),
     scoreMessage: document.getElementById('scoreMessage'),
-    restartBtn: document.getElementById('restartBtn')
+    restartBtn: document.getElementById('restartBtn'),
+    funFacts: document.getElementById('funFacts'),
+    funFactText: document.getElementById('funFactText'),
+    budgetAmount: document.getElementById('budgetAmount')
 };
 
 // Initialize game
@@ -98,6 +82,9 @@ function initGame() {
     elements.total.textContent = currentGame.members.length;
     elements.score.textContent = currentGame.score;
 
+    // Start budget counter
+    startBudgetCounter();
+
     // Load first member
     loadCurrentMember();
 
@@ -113,6 +100,56 @@ function shuffleArray(array) {
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
+}
+
+// Show a random fun fact
+function showRandomFunFact() {
+    const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+    elements.funFactText.textContent = randomFact;
+    elements.funFacts.style.display = 'block';
+}
+
+// Hide fun facts
+function hideFunFacts() {
+    elements.funFacts.style.display = 'none';
+}
+
+// Show loading message
+function showLoadingMessage() {
+    const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
+    elements.memberName.textContent = randomMessage;
+}
+
+// Update budget counter with random amount
+function updateBudget() {
+    // Generate random amount between $0.01 and $1.37 million
+    const minAmount = 0.01;
+    const maxAmount = 1370000;
+    const randomAmount = Math.random() * (maxAmount - minAmount) + minAmount;
+
+    // Format the amount with commas and 2 decimal places
+    const formattedAmount = '$' + randomAmount.toLocaleString('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
+
+    elements.budgetAmount.textContent = formattedAmount;
+}
+
+// Start budget counter animation
+function startBudgetCounter() {
+    // Update immediately
+    updateBudget();
+
+    // Update every 2-4 seconds randomly
+    const updateInterval = () => {
+        updateBudget();
+        const nextUpdate = Math.random() * 2000 + 2000; // 2-4 seconds
+        setTimeout(updateInterval, nextUpdate);
+    };
+
+    // Start the random updates
+    setTimeout(updateInterval, Math.random() * 2000 + 1000);
 }
 
 // Load current member
@@ -139,6 +176,7 @@ function loadCurrentMember() {
     elements.submitBtn.disabled = true;
     elements.nextBtn.style.display = 'none';
     elements.results.style.display = 'none';
+    hideFunFacts();
 
     // Handle image loading error - show placeholder
     elements.memberPhoto.onerror = function () {
@@ -261,6 +299,11 @@ function showResults(member, correctCount) {
     `;
 
     elements.results.style.display = 'block';
+
+    // Show a fun fact after a short delay
+    setTimeout(() => {
+        showRandomFunFact();
+    }, 1500);
 }
 
 // Handle next
@@ -270,8 +313,12 @@ function handleNext() {
     if (currentGame.currentIndex >= currentGame.members.length) {
         showGameOver();
     } else {
-        loadCurrentMember();
-        elements.submitBtn.style.display = 'inline-block';
+        // Show loading message briefly before next member
+        showLoadingMessage();
+        setTimeout(() => {
+            loadCurrentMember();
+            elements.submitBtn.style.display = 'inline-block';
+        }, 800);
     }
 }
 
@@ -285,24 +332,29 @@ function showGameOver() {
 
     elements.finalScore.textContent = `${currentGame.score}/${totalQuestions} (${Math.round(percentage)}%)`;
 
-    // Score message
+    // Score message with some humor
     let message, className;
     if (percentage >= 80) {
-        message = "🎉 Excellent! You really know your team!";
+        message = "🎉 Excellent! You know your team better than they know themselves! Maybe consider a career as a walking simulator developer.";
         className = "score-excellent";
     } else if (percentage >= 60) {
-        message = "👍 Good job! You have a solid understanding of your teammates.";
+        message = "👍 Good job! You have solid team knowledge. Unlike those fugly first date photos, your performance is actually attractive!";
         className = "score-good";
     } else if (percentage >= 40) {
-        message = "🤔 Not bad! Maybe spend more time in the break room?";
+        message = "🤔 Not bad! Maybe spend less time thinking about crunchy almond butter and more time in the break room?";
         className = "score-okay";
     } else {
-        message = "😅 Looks like you need to get to know your team better!";
+        message = "😅 Looks like you need to get to know your team better! At least you didn't lose 8 minutes of your life to hot dogs during this game.";
         className = "score-poor";
     }
 
     elements.scoreMessage.textContent = message;
     elements.scoreMessage.className = className;
+
+    // Show a final fun fact
+    setTimeout(() => {
+        showRandomFunFact();
+    }, 1000);
 }
 
 // Restart game
@@ -318,6 +370,9 @@ document.addEventListener('DOMContentLoaded', function () {
     elements.setupInstructions.style.display = 'block';
     elements.gameArea.style.display = 'none';
     elements.gameOver.style.display = 'none';
+
+    // Start budget counter even during setup
+    startBudgetCounter();
 
     // Add event listener for start button
     elements.startGameBtn.addEventListener('click', initGame);

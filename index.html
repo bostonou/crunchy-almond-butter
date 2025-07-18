@@ -13,11 +13,18 @@
         <header>
             <h1>🥜 Team Preference Detective 🍊</h1>
             <p>Can you guess your teammates' food preferences?</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; font-style: italic;">
+                Warning: May cause existential questions about artisanal peanut butter
+            </p>
         </header>
 
         <div class="game-area">
             <div class="game-info">
                 <div class="score">Score: <span id="score">0</span>/<span id="total">0</span></div>
+                <div class="budget-counter">
+                    <div class="budget-label">💰 Dev Experience Budget</div>
+                    <div class="budget-amount" id="budgetAmount">$1,337,420.69</div>
+                </div>
                 <div class="progress">
                     <div class="progress-bar">
                         <div class="progress-fill" id="progressFill"></div>
@@ -36,10 +43,10 @@
                     <h3>🥜 Peanut Butter Preference?</h3>
                     <div class="choices">
                         <button class="choice-btn" data-question="peanutButter" data-answer="crunchy">
-                            🥜 Crunchy
+                            🥜 Crunchy<br><small>(Regular, not artisanal)</small>
                         </button>
                         <button class="choice-btn" data-question="peanutButter" data-answer="creamy">
-                            🧈 Creamy
+                            🧈 Creamy<br><small>(With commitment issues)</small>
                         </button>
                     </div>
                 </div>
@@ -66,6 +73,11 @@
                 <h3>Results:</h3>
                 <div id="resultDetails"></div>
             </div>
+
+            <div class="fun-facts" id="funFacts" style="display: none;">
+                <h3>🎉 Random Fun Fact 🎉</h3>
+                <p id="funFactText"></p>
+            </div>
         </div>
 
         <div class="game-over" id="gameOver" style="display: none;">
@@ -77,12 +89,16 @@
 
         <div class="setup-instructions" id="setupInstructions">
             <h3>🚀 Setup Instructions</h3>
-            <p>To customize this game for your team:</p>
+            <p>To customize this game for your team (more fun than a Summit in Oklahoma!):</p>
             <ol>
-                <li>Add team member photos to the <code>images/</code> folder</li>
+                <li>Add team member photos to the <code>images/</code> folder (avoid fugly first date quality)</li>
                 <li>Update the team data in <code>script.js</code></li>
                 <li>Each photo should be named like: <code>john-doe.jpg</code></li>
+                <li>Survey your team's preferences (discretely, unlike folding napkins in bathrooms)</li>
             </ol>
+            <p style="font-size: 0.9rem; font-style: italic; margin-top: 15px;">
+                🕰️ Best time to play: Anytime except 2:37am (that's reserved for Toronto traffic)
+            </p>
             <button id="startGameBtn" class="start-btn">Start Game</button>
         </div>
     </div>
