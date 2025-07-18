@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Preference Guessing Game</title>
+    <title>The Great Developer Experience Adventure</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>🥜 Team Preference Detective 🍊</h1>
-            <p>Can you guess your teammates' food preferences?</p>
+            <h1>🎮 The Great Developer Experience Adventure 🌭</h1>
+            <p>Choose your path wisely... hot dogs and budgets await!</p>
             <p style="font-size: 0.9rem; opacity: 0.8; font-style: italic;">
-                Warning: May cause existential questions about artisanal peanut butter
+                Warning: May cause hot dog addiction and loss of 43 years of life span
             </p>
         </header>
 
@@ -33,40 +33,28 @@
                 </div>
             </div>
 
-            <div class="photo-container">
-                <img id="memberPhoto" src="" alt="Team Member" class="member-photo">
-                <h2 id="memberName">Loading...</h2>
+            <div class="story-container">
+                <h2 id="memberName">🎮 The Great Developer Experience Adventure</h2>
+                <div class="story-image">
+                    <img id="memberPhoto" src="" alt="Adventure Scene" class="member-photo" style="display: none;">
+                    <div class="story-icon">🎪</div>
+                </div>
             </div>
 
             <div class="questions-container">
-                <div class="question">
-                    <h3>🥜 Peanut Butter Preference?</h3>
-                    <div class="choices">
-                        <button class="choice-btn" data-question="peanutButter" data-answer="crunchy">
-                            🥜 Crunchy<br><small>(Regular, not artisanal)</small>
-                        </button>
-                        <button class="choice-btn" data-question="peanutButter" data-answer="creamy">
-                            🧈 Creamy<br><small>(With commitment issues)</small>
-                        </button>
-                    </div>
+                <div class="story-text">
+                    <p>Loading your adventure...</p>
                 </div>
-
-                <div class="question">
-                    <h3>🍊 Orange Juice Preference?</h3>
-                    <div class="choices">
-                        <button class="choice-btn" data-question="orangeJuice" data-answer="pulp">
-                            🌊 With Pulp
-                        </button>
-                        <button class="choice-btn" data-question="orangeJuice" data-answer="noPulp">
-                            💧 No Pulp
-                        </button>
-                    </div>
+                <div class="choices">
+                    <button class="choice-btn" data-choice="0">
+                        🎮 Loading...
+                    </button>
                 </div>
             </div>
 
-            <div class="action-buttons">
-                <button id="submitBtn" class="submit-btn" disabled>Submit Guesses</button>
-                <button id="nextBtn" class="next-btn" style="display: none;">Next Person</button>
+            <div class="action-buttons" style="display: none;">
+                <button id="submitBtn" class="submit-btn" disabled>Make Choice</button>
+                <button id="nextBtn" class="next-btn" style="display: none;">Continue Adventure</button>
             </div>
 
             <div class="results" id="results" style="display: none;">
@@ -81,25 +69,32 @@
         </div>
 
         <div class="game-over" id="gameOver" style="display: none;">
-            <h2>🎉 Game Complete!</h2>
-            <p>Your final score: <span id="finalScore"></span></p>
+            <h2>🎭 Adventure Complete!</h2>
+            <p>Your journey results: <span id="finalScore"></span></p>
             <div id="scoreMessage"></div>
-            <button id="restartBtn" class="restart-btn">Play Again</button>
+            <button id="restartBtn" class="restart-btn">Start New Adventure</button>
         </div>
 
         <div class="setup-instructions" id="setupInstructions">
-            <h3>🚀 Setup Instructions</h3>
-            <p>To customize this game for your team (more fun than a Summit in Oklahoma!):</p>
-            <ol>
-                <li>Add team member photos to the <code>images/</code> folder (avoid fugly first date quality)</li>
-                <li>Update the team data in <code>script.js</code></li>
-                <li>Each photo should be named like: <code>john-doe.jpg</code></li>
-                <li>Survey your team's preferences (discretely, unlike folding napkins in bathrooms)</li>
-            </ol>
+            <h3>🎮 Adventure Instructions</h3>
+            <p>Welcome to the most absurd developer experience adventure ever created!</p>
+            <div class="adventure-preview">
+                <h4>🌭 Your Choices Matter:</h4>
+                <ul>
+                    <li><strong>🚀 Path to Riches:</strong> Make smart choices and watch your Developer Experience
+                        Budget soar to $100,000,000!</li>
+                    <li><strong>💀 Path to Doom:</strong> Get addicted to hot dogs and lose 43 years of life span, 8
+                        minutes at a time</li>
+                    <li><strong>🤔 Path to Enlightenment:</strong> Discover the meaning of crunchy almond butter and
+                        achieve inner peace</li>
+                    <li><strong>🎪 Path to Chaos:</strong> Become a napkin-folding detective or a fugly photo influencer
+                    </li>
+                </ul>
+            </div>
             <p style="font-size: 0.9rem; font-style: italic; margin-top: 15px;">
                 🕰️ Best time to play: Anytime except 2:37am (that's reserved for Toronto traffic)
             </p>
-            <button id="startGameBtn" class="start-btn">Start Game</button>
+            <button id="startGameBtn" class="start-btn">Begin Your Adventure</button>
         </div>
     </div>
 
