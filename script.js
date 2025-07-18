@@ -358,11 +358,12 @@ const adventureStory = {
 
     team_connection: {
         title: "🎯 The Creative Connector",
-        text: "You find creative ways to connect with your Production Excellence team. You organize morning coffee chats, start a gaming club, and suggest team lunches. Your teammates appreciate your initiative! The budget reaches $3,333,333.33 as you become the team's social organizer.",
+        text: "You find creative ways to connect with your Production Excellence team. You organize morning coffee chats, start a gaming club, and suggest team lunches. Your teammates appreciate your initiative! The budget reaches $3,333,333.33 as you become the team's social organizer. But during a team snack break, you accidentally trigger a massive debate: someone brings Bon Bons and half the team insists they're candy while the other half argues they're chocolate-covered ice cream. The office splits into warring factions!",
         choices: [
             { text: "🎮 Become the team's culture coordinator", next: "culture_coordinator" },
             { text: "☕ Start a coffee appreciation society", next: "coffee_society" },
-            { text: "🍽️ Organize epic team lunches", next: "lunch_organizer" }
+            { text: "🍽️ Organize epic team lunches", next: "lunch_organizer" },
+            { text: "🍬 Navigate the great Bon Bons blood feud", next: "bon_bons_blood_feud" }
         ]
     },
 
@@ -396,11 +397,12 @@ const adventureStory = {
 
     young_leader: {
         title: "👑 The Young Leader",
-        text: "You rise to be in charge of your Production Excellence team despite being the youngest. Your teammates respect your competence and dedication. At the leadership celebration, they offer you your first drink. You take a sip of the expensive whiskey and... it tastes absolutely disgusting! The budget reaches $50,000,000.00!",
+        text: "You rise to be in charge of your Production Excellence team despite being the youngest. Your teammates respect your competence and dedication. At the leadership celebration, they offer you your first drink. You take a sip of the expensive whiskey and... it tastes absolutely disgusting! The budget reaches $50,000,000.00! Later, the executive team invites you to their exclusive lunch to welcome you to leadership. The meal? All Fruit Jelly and Grey Poupon Mustard - the legendary delicacy of the elite executives!",
         choices: [
             { text: "🤢 Admit alcohol is gross and stay sober", next: "sober_leader_ending" },
             { text: "😅 Pretend to like it to fit in", next: "pretend_drink" },
-            { text: "🎯 Suggest better celebration alternatives", next: "alternative_celebration" }
+            { text: "🎯 Suggest better celebration alternatives", next: "alternative_celebration" },
+            { text: "🍇 Experience the elite executive meal", next: "elite_executive_meal" }
         ]
     },
 
@@ -976,12 +978,13 @@ const adventureStory = {
 
     almond_existential: {
         title: "🤔 The Almond Identity Crisis",
-        text: "You sit in contemplation. Is crunchy almond butter just nuts having an identity crisis? Are we all just nuts having identity crises? The philosophical weight crushes your soul. The budget fluctuates wildly between $3.17 and $8,765,432.10. You remember that someone once said Clojure is the path to enlightenment...",
+        text: "You sit in contemplation. Is crunchy almond butter just nuts having an identity crisis? Are we all just nuts having identity crises? The philosophical weight crushes your soul. The budget fluctuates wildly between $3.17 and $8,765,432.10. You remember that someone once said Clojure is the path to enlightenment... But wait, you notice something profound: people who prefer crunchy peanut butter also prefer pulp orange juice, while creamy peanut butter lovers prefer no pulp. This correlation shakes your worldview!",
         choices: [
             { text: "🧘 Achieve enlightenment", next: "enlightenment_ending" },
             { text: "🎮 Escape reality with walking simulators", next: "walking_sim_deep" },
             { text: "🌭 Stress-eat hot dogs", next: "stress_hotdog" },
-            { text: "🧘 Seek true enlightenment through Clojure", next: "clojure_path" }
+            { text: "🧘 Seek true enlightenment through Clojure", next: "clojure_path" },
+            { text: "🥜 Investigate the peanut butter-orange juice correlation", next: "texture_correlation_discovery" }
         ]
     },
 
@@ -1851,6 +1854,118 @@ const adventureStory = {
         ]
     },
 
+    // New story elements
+    texture_correlation_discovery: {
+        title: "🥜 The Great Texture Correlation Discovery",
+        text: "You dive deep into the correlation between peanut butter and orange juice preferences. After extensive research involving your Production Excellence teammates, you discover it's TRUE! Crunchy peanut butter lovers DO prefer pulp orange juice, while creamy peanut butter people want smooth, pulp-free juice. This texture-consistency preference revelation rocks the scientific world! Your research paper 'Oral Texture Preference Correlations in Breakfast Foods' gets published. The budget soars to $12,345,678.90!",
+        choices: [
+            { text: "🔬 Become a texture preference scientist", next: "texture_scientist_ending" },
+            { text: "🥜 Start a texture-based food empire", next: "texture_empire" },
+            { text: "🧠 Study more food correlations", next: "food_correlation_research" }
+        ]
+    },
+
+    texture_scientist_ending: {
+        title: "🔬 The Texture Preference Scientist",
+        text: "You become the world's leading expert on food texture correlations. Your Production Excellence team helps you build databases of taste preferences. You discover that chunky soup lovers prefer extra crunchy chips, while smooth soup people want regular chips. Your texture research revolutionizes the food industry! Final budget: $89,123,456.78. You've unlocked the secrets of oral texture harmony!",
+        choices: [
+            { text: "🔬 Research the textures of a new adventure", next: "restart" }
+        ]
+    },
+
+    texture_empire: {
+        title: "🥜 The Texture-Based Food Empire",
+        text: "You start 'Texture Match' - a company that creates perfectly matched food combinations based on texture preferences. Your Production Excellence team helps you build the algorithm. Crunchy peanut butter lovers get recommended pulp orange juice, chunky salsa, and extra crunchy cereals. Your empire makes billions! Final budget: $123,456,789.01. You've monetized oral texture preferences!",
+        choices: [
+            { text: "🥜 Build texture harmony in a new adventure", next: "restart" }
+        ]
+    },
+
+    food_correlation_research: {
+        title: "🧠 The Food Correlation Research",
+        text: "You become obsessed with finding more food correlations. You discover that people who like their coffee black also prefer dark chocolate, while cream-and-sugar people prefer milk chocolate. Your Production Excellence teammates help you map personality traits to food preferences. You create the 'Food Personality Index' that becomes a psychological assessment tool. Final budget: $67,890,123.45. You've correlated your way to food psychology fame!",
+        choices: [
+            { text: "🧠 Correlate a new adventure", next: "restart" }
+        ]
+    },
+
+    bon_bons_blood_feud: {
+        title: "🍬 The Great Bon Bons Blood Feud",
+        text: "You attempt to mediate the Great Bon Bons Blood Feud that has split your Production Excellence team. The 'Candy Camp' argues that Bon Bons are clearly candy - they're sweet, they're in the candy aisle, case closed. The 'Ice Cream Camp' insists they're chocolate-covered ice cream - they're frozen, they melt, they're literally ice cream! The debate escalates when someone brings up ice cream bonbons vs candy bonbons. Your office becomes a battlefield of conflicting dessert definitions! The budget fluctuates wildly between $1,000,000 and $50,000,000 as productivity stops entirely.",
+        choices: [
+            { text: "🍬 Side with the Candy Camp", next: "candy_camp_victory" },
+            { text: "🍦 Join the Ice Cream Camp", next: "ice_cream_camp_victory" },
+            { text: "🤔 Propose that Bon Bons are both", next: "bon_bons_unity" },
+            { text: "😤 Declare war on all Bon Bons", next: "bon_bons_war" }
+        ]
+    },
+
+    candy_camp_victory: {
+        title: "🍬 The Candy Camp Victory",
+        text: "You side with the Candy Camp in the great Bon Bons blood feud. Your arguments are compelling: 'They're sold in the candy section! They're sweet! They don't need refrigeration!' The Ice Cream Camp is defeated, but they never forgive you. Your Production Excellence team is forever divided. Half your colleagues refuse to attend meetings with you. The candy victory is pyrrhic - you've won the argument but lost team unity. Final budget: $2,500,000.00. You've learned that some battles aren't worth winning!",
+        choices: [
+            { text: "🍬 Rule over your candy kingdom alone", next: "restart" }
+        ]
+    },
+
+    ice_cream_camp_victory: {
+        title: "🍦 The Ice Cream Camp Victory",
+        text: "You join the Ice Cream Camp in the great Bon Bons blood feud. Your arguments are solid: 'They're frozen! They melt! They're literally ice cream covered in chocolate!' The Candy Camp grudgingly admits defeat, but they plot revenge. Your Production Excellence team splits into factions. The ice cream victory comes at a cost - office morale is destroyed, and productivity plummets as people argue about dessert classifications. Final budget: $3,750,000.00. You've won the battle but lost the war!",
+        choices: [
+            { text: "🍦 Reign over your frozen dessert domain", next: "restart" }
+        ]
+    },
+
+    bon_bons_unity: {
+        title: "🤔 The Bon Bons Unity Proposal",
+        text: "You propose that Bon Bons are both candy AND ice cream, depending on the specific product. Your Production Excellence teammates are intrigued by your diplomatic approach. 'Ice cream bonbons are ice cream, candy bonbons are candy!' you declare. Both camps consider this wisdom... until someone brings up frozen candy bars. The unity proposal fails spectacularly as the debate expands to include ALL frozen desserts. Your attempt at peace creates even more chaos. Final budget: $1,234,567.89. You've learned that some problems don't have solutions!",
+        choices: [
+            { text: "🤔 Philosophize about dessert definitions", next: "restart" }
+        ]
+    },
+
+    bon_bons_war: {
+        title: "😤 The Bon Bons War",
+        text: "You declare war on all Bon Bons, arguing that the entire category is confusing and should be eliminated. Your Production Excellence teammates are shocked by your radical position. 'Down with Bon Bons!' you cry. 'They're neither good candy nor good ice cream!' Both camps unite against you, the common enemy. Your anti-Bon Bons stance makes you a pariah. The team bonds over their shared hatred of your dessert extremism. Final budget: $666,666.66. You've united the team... against you!",
+        choices: [
+            { text: "😤 Fight the Bon Bons war alone", next: "restart" }
+        ]
+    },
+
+    elite_executive_meal: {
+        title: "🍇 The Elite Executive Meal",
+        text: "You sit down to experience the legendary meal of the elite executives: All Fruit Jelly and Grey Poupon Mustard. This combination has been whispered about in executive circles for years. Only the most successful leaders get to taste this exclusive delicacy. You've worked so hard to earn this privilege! You take a bite and... it's incredibly meh. The jelly is too sweet, the mustard is too tangy, and together they're just confusing. Your Production Excellence teammates watch as your face shows disappointment. The legendary executive meal is just expensive grocery store items that don't go together. The budget stays at $50,000,000.00 but your illusions are shattered.",
+        choices: [
+            { text: "😞 Admit the elite meal is disappointing", next: "elite_meal_disappointment" },
+            { text: "😅 Pretend it's amazing to fit in", next: "elite_meal_pretense" },
+            { text: "🧐 Analyze why elites eat this", next: "elite_meal_analysis" }
+        ]
+    },
+
+    elite_meal_disappointment: {
+        title: "😞 The Elite Meal Disappointment",
+        text: "You honestly admit that the elite executive meal is disappointing. 'This is just jelly and mustard,' you say. 'It's not even good jelly and mustard.' The executive team is shocked by your honesty. Some respect your authenticity, others are offended by your lack of sophistication. Your Production Excellence teammates admire your courage to speak truth to power. You start a movement of honest food criticism in the executive ranks. Final budget: $75,000,000.00. You've learned that honesty is more valuable than pretense!",
+        choices: [
+            { text: "😞 Lead the honest food revolution", next: "restart" }
+        ]
+    },
+
+    elite_meal_pretense: {
+        title: "😅 The Elite Meal Pretense",
+        text: "You pretend the elite executive meal is amazing. 'Wow, the complexity of flavors!' you lie. 'The jelly's sweetness perfectly balances the mustard's sharpness!' The executives beam with pride at your 'sophisticated palate.' But inside, you die a little. Your Production Excellence teammates can see through your act. You become known for fake enthusiasm about terrible food. The burden of pretense weighs on your soul. Final budget: $25,000,000.00. You've learned that lying about food is expensive for the spirit!",
+        choices: [
+            { text: "😅 Live the lie forever", next: "restart" }
+        ]
+    },
+
+    elite_meal_analysis: {
+        title: "🧐 The Elite Meal Analysis",
+        text: "You analyze why elite executives eat All Fruit Jelly and Grey Poupon Mustard. After extensive research, you discover it's not about taste - it's about exclusivity and tradition. The combination is deliberately mediocre to test who will pretend to like it for social acceptance. Your Production Excellence teammates are fascinated by your sociological insight. You write a paper on 'Elite Food Gatekeeping and Social Hierarchy.' Your analysis revolutionizes understanding of executive culture. Final budget: $100,000,000.00. You've decoded the secret of elite food psychology!",
+        choices: [
+            { text: "🧐 Analyze the sociology of a new adventure", next: "restart" }
+        ]
+    },
+
     movie_distraction: {
         title: "📺 The Movie Distraction",
         text: "You decide to watch '28 Days Later' on TV instead of playing walking simulators. The zombie movie draws you in completely. You lose track of time as you follow the post-apocalyptic survival story. Hours pass. Your Production Excellence teammates start messaging you about the daily standup. You realize you're going to be late to work! The budget fluctuates wildly as you face the movie/work dilemma.",
@@ -2286,7 +2401,21 @@ function updateBudgetForChoice(storyKey) {
         'movie_comedian': () => setBudget(30000000),
         'movie_balance_master': () => setBudget(45000000),
         'movie_culture_officer': () => setBudget(200000000),
-        'movie_guide_author': () => setBudget(175000000)
+        'movie_guide_author': () => setBudget(175000000),
+        // New story elements budget changes
+        'texture_correlation_discovery': () => setBudget(12345678.90),
+        'texture_scientist_ending': () => setBudget(89123456.78),
+        'texture_empire': () => setBudget(123456789.01),
+        'food_correlation_research': () => setBudget(67890123.45),
+        'bon_bons_blood_feud': () => setBudget(Math.random() * 49000000 + 1000000),
+        'candy_camp_victory': () => setBudget(2500000),
+        'ice_cream_camp_victory': () => setBudget(3750000),
+        'bon_bons_unity': () => setBudget(1234567.89),
+        'bon_bons_war': () => setBudget(666666.66),
+        'elite_executive_meal': () => setBudget(50000000),
+        'elite_meal_disappointment': () => setBudget(75000000),
+        'elite_meal_pretense': () => setBudget(25000000),
+        'elite_meal_analysis': () => setBudget(100000000)
     };
 
     if (budgetChanges[storyKey]) {
