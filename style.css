@@ -1,0 +1,413 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Game area */
+.game-area {
+    padding: 30px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+    background: #f8f9ff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #667eea;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+#progressText {
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* Photo container */
+.photo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.member-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6b6b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.member-photo:hover {
+    transform: scale(1.05);
+}
+
+#memberName {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Questions */
+.questions-container {
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-bottom: 25px;
+    padding: 25px;
+    background: #f8f9ff;
+    border-radius: 15px;
+    border-left: 5px solid #667eea;
+}
+
+.question h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.choices {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.choice-btn {
+    flex: 1;
+    min-width: 120px;
+    padding: 15px 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.choice-btn:hover {
+    background: #f0f0f0;
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+.choice-btn.selected {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.choice-btn.correct {
+    background: #51cf66;
+    color: white;
+    border-color: #51cf66;
+}
+
+.choice-btn.incorrect {
+    background: #ff6b6b;
+    color: white;
+    border-color: #ff6b6b;
+}
+
+.choice-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Action buttons */
+.action-buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.submit-btn,
+.next-btn,
+.restart-btn,
+.start-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:hover,
+.next-btn:hover,
+.restart-btn:hover,
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Results */
+.results {
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.results h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-correct {
+    color: #51cf66;
+    font-weight: bold;
+}
+
+.result-incorrect {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Game over */
+.game-over {
+    text-align: center;
+    padding: 30px;
+}
+
+.game-over h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-over p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+#finalScore {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.5rem;
+}
+
+#scoreMessage {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.score-excellent {
+    background: #51cf66;
+    color: white;
+}
+
+.score-good {
+    background: #feca57;
+    color: #333;
+}
+
+.score-okay {
+    background: #ff9f43;
+    color: white;
+}
+
+.score-poor {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* Setup instructions */
+.setup-instructions {
+    padding: 30px;
+    text-align: center;
+}
+
+.setup-instructions h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.setup-instructions ol {
+    text-align: left;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.setup-instructions li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.setup-instructions code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .game-area {
+        padding: 20px;
+    }
+
+    .game-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-bar {
+        width: 150px;
+    }
+
+    .member-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .choices {
+        flex-direction: column;
+    }
+
+    .choice-btn {
+        min-width: auto;
+    }
+
+    .question {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .score {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+
+    .member-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #memberName {
+        font-size: 1.5rem;
+    }
+
+    .question h3 {
+        font-size: 1.2rem;
+    }
+
+    .choice-btn {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+}
