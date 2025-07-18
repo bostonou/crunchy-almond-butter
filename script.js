@@ -12,7 +12,8 @@ const adventureStory = {
             { text: "🛍️ Investigate the Production Excellence team's green mascot mystery", next: "shrek_mystery" },
             { text: "🍺 Check your team's happy hour invitation", next: "too_young_drinking" },
             { text: "🍰 Go to team dinner but only eat dessert", next: "dessert_only_dinner" },
-            { text: "😎 Be Olakitan", next: "olakitan_start" }
+            { text: "😎 Be Olakitan", next: "olakitan_start" },
+            { text: "🕷️ Notice a spider in your home office", next: "spider_encounter" }
         ]
     },
 
@@ -350,7 +351,8 @@ const adventureStory = {
         choices: [
             { text: "🚀 Become the team's technical leader", next: "technical_leader" },
             { text: "📈 Get promoted ahead of your peers", next: "early_promotion" },
-            { text: "🎯 Balance work with social connections", next: "balanced_approach" }
+            { text: "🎯 Balance work with social connections", next: "balanced_approach" },
+            { text: "📦 Organize by sorting thousands of things", next: "sorting_chaos" }
         ]
     },
 
@@ -1084,7 +1086,8 @@ const adventureStory = {
             { text: "💡 Develop your own walking simulator", next: "game_dev_success" },
             { text: "🎪 Create a walking simulator about Oklahoma Summit", next: "oklahoma_sim" },
             { text: "🌭 Take a hot dog break", next: "gaming_hotdog" },
-            { text: "💻 Start a mission to make people say 'Kly' instead of 'C-L-I'", next: "cli_mission" }
+            { text: "💻 Start a mission to make people say 'Kly' instead of 'C-L-I'", next: "cli_mission" },
+            { text: "📺 Watch '28 Days Later' on TV instead", next: "movie_distraction" }
         ]
     },
 
@@ -1657,6 +1660,340 @@ const adventureStory = {
         choices: [
             { text: "📝 Write the story of a new adventure", next: "restart" }
         ]
+    },
+
+    // New joke story nodes
+    sorting_chaos: {
+        title: "📦 The Great Sorting Catastrophe",
+        text: "You decide to organize your productivity by sorting thousands of things. Your desk items, code files, emails, Slack messages, digital photos, and even your teammates' priorities. You start with confidence, but halfway through you accidentally drop your laptop while carrying a stack of 3,000 printed emails. Everything scatters everywhere! Your Production Excellence teammates watch in horror as papers fly across the office. The budget fluctuates wildly between $100.00 and $25,000,000.00 as chaos reigns.",
+        choices: [
+            { text: "😱 Panic and give up on sorting forever", next: "sorting_defeat" },
+            { text: "💪 Double down and sort everything properly", next: "sorting_mastery" },
+            { text: "🎯 Turn the chaos into a team building exercise", next: "sorting_team_building" }
+        ]
+    },
+
+    sorting_defeat: {
+        title: "😱 The Sorting Defeat",
+        text: "You give up on sorting and embrace chaos. Your Production Excellence teammates help you pick up the scattered papers, but you've learned that some things are better left unsorted. Your desk returns to its natural state of organized chaos. The budget settles at $2,222,222.22 as you find peace in disorder.",
+        choices: [
+            { text: "🧘 Find zen in the chaos", next: "chaos_enlightenment" },
+            { text: "🎮 Distract yourself with walking simulators", next: "walking_sim_deep" }
+        ]
+    },
+
+    sorting_mastery: {
+        title: "💪 The Sorting Master",
+        text: "You refuse to give up! You methodically sort everything, creating the most organized workspace in Production Excellence history. Your system is so efficient that other teams beg you to organize their spaces. The budget soars to $50,000,000.00 as your organizational skills become legendary throughout Shopify!",
+        choices: [
+            { text: "🏆 Become the Chief Organization Officer", next: "organization_emperor" },
+            { text: "📚 Write a book about organizational systems", next: "sorting_guru_ending" }
+        ]
+    },
+
+    sorting_team_building: {
+        title: "🎯 The Sorting Team Building",
+        text: "You turn the chaos into a team building exercise! Your Production Excellence teammates join you in sorting everything together. You create color-coded systems, implement group organization strategies, and bond over shared organizational goals. The budget reaches $33,333,333.33 as teamwork makes the dream work!",
+        choices: [
+            { text: "🤝 Become the team building coordinator", next: "team_building_master" },
+            { text: "🎯 Perfect the art of chaos management", next: "chaos_manager_ending" }
+        ]
+    },
+
+    chaos_enlightenment: {
+        title: "🧘 The Chaos Enlightenment",
+        text: "You achieve enlightenment by embracing chaos. Your Production Excellence team admires your zen-like acceptance of disorder. You become the master of organized chaos, helping others find peace in imperfection. Final budget: $77,777,777.77. You've learned that some things are perfect in their imperfection!",
+        choices: [
+            { text: "🧘 Achieve chaotic harmony", next: "restart" }
+        ]
+    },
+
+    organization_emperor: {
+        title: "🏆 The Organization Emperor",
+        text: "You become Shopify's Chief Organization Officer. Your sorting systems revolutionize how the entire company operates. Productivity increases 300% thanks to your organizational mastery. Final budget: $200,000,000.00. You've sorted your way to supreme success!",
+        choices: [
+            { text: "📦 Organize a new adventure", next: "restart" }
+        ]
+    },
+
+    sorting_guru_ending: {
+        title: "📚 The Sorting Guru",
+        text: "Your book 'The Art of Sorting Thousands of Things' becomes a bestseller. You become the world's leading expert on organizational systems and chaos management. Final budget: $150,000,000.00. You've turned scattered chaos into sorted success!",
+        choices: [
+            { text: "📚 Sort through a new adventure", next: "restart" }
+        ]
+    },
+
+    team_building_master: {
+        title: "🤝 The Team Building Master",
+        text: "You become the master of team building through shared organizational challenges. Your Production Excellence team becomes the most cohesive unit at Shopify. Final budget: $100,000,000.00. You've built success through teamwork!",
+        choices: [
+            { text: "🤝 Build a new adventure", next: "restart" }
+        ]
+    },
+
+    chaos_manager_ending: {
+        title: "🎯 The Chaos Manager",
+        text: "You perfect the art of managing chaos. Your ability to turn disorder into opportunity becomes legendary. Companies worldwide hire you to help them navigate organizational chaos. Final budget: $250,000,000.00. You've mastered the art of beautiful chaos!",
+        choices: [
+            { text: "🎯 Navigate to a new adventure", next: "restart" }
+        ]
+    },
+
+    spider_encounter: {
+        title: "🕷️ The Spider Situation",
+        text: "You spot a spider in the corner of your home office. It's just sitting there, being a spider. Your Production Excellence teammates are on video call and can see your expression change. 'What's wrong?' they ask. You point at the spider. Everyone has an opinion about spiders. The truth is simple: spiders are bad. They're just bad. The budget stays at $1,337,420.69 but your comfort level plummets.",
+        choices: [
+            { text: "😱 Panic and abandon your office", next: "spider_panic" },
+            { text: "💪 Be brave and remove the spider", next: "spider_hero" },
+            { text: "🤝 Ask your teammates for spider advice", next: "spider_teamwork" },
+            { text: "🧘 Accept the spider as your new office mate", next: "spider_coexistence" }
+        ]
+    },
+
+    spider_panic: {
+        title: "😱 The Spider Panic",
+        text: "You abandon your office and work from a coffee shop for three weeks. Your Production Excellence teammates tease you about 'the spider incident.' You eventually return to find the spider has built a web empire across your entire workspace. The budget drops to $500,000.00 as you pay for expensive coffee shop wifi and spider removal services.",
+        choices: [
+            { text: "🏃 Move to a new apartment", next: "spider_refugee" },
+            { text: "💡 Become a spider education advocate", next: "spider_educator" }
+        ]
+    },
+
+    spider_hero: {
+        title: "💪 The Spider Hero",
+        text: "You bravely capture the spider and relocate it outside. Your Production Excellence teammates are impressed by your courage. You become known as the team's spider hero. The budget increases to $10,000,000.00 as your bravery inspires confidence in all team challenges!",
+        choices: [
+            { text: "🕷️ Become the office spider wrangler", next: "spider_wrangler" },
+            { text: "💪 Channel your bravery into work excellence", next: "spider_courage_boost" }
+        ]
+    },
+
+    spider_teamwork: {
+        title: "🤝 The Spider Teamwork",
+        text: "Your Production Excellence teammates rally to help you with the spider situation. They provide moral support, spider-catching advice, and even offer to come over to help. The team bonding over spider management brings you closer together. The budget reaches $15,000,000.00 as teamwork conquers arachnid challenges!",
+        choices: [
+            { text: "🤝 Become the team's problem-solving coordinator", next: "spider_team_coordinator" },
+            { text: "🕷️ Start a spider response team", next: "spider_response_team" }
+        ]
+    },
+
+    spider_coexistence: {
+        title: "🧘 The Spider Coexistence",
+        text: "You decide to coexist with the spider. You name it 'Webster' and it becomes your office mascot. Your Production Excellence teammates are amazed by your zen approach to spider management. Webster seems to bring good luck to your coding sessions. The budget mysteriously grows to $25,000,000.00 as spider harmony brings prosperity!",
+        choices: [
+            { text: "🕷️ Become the spider whisperer", next: "spider_whisperer_ending" },
+            { text: "🧘 Achieve enlightenment through spider coexistence", next: "spider_enlightenment" }
+        ]
+    },
+
+    spider_refugee: {
+        title: "🏃 The Spider Refugee",
+        text: "You move to a new apartment to escape the spider empire. Your Production Excellence teammates help you move and joke about your 'spider phobia.' Your new place is spider-free but you're always vigilant. Final budget: $2,000,000.00. You've learned that sometimes retreat is the best strategy!",
+        choices: [
+            { text: "🏠 Settle into a new spider-free adventure", next: "restart" }
+        ]
+    },
+
+    spider_educator: {
+        title: "💡 The Spider Educator",
+        text: "You become an advocate for spider education, teaching others that spiders are actually beneficial. Your Production Excellence team supports your transformation from spider-phobic to spider-informed. You create educational content about arachnids. Final budget: $8,000,000.00. You've turned fear into knowledge!",
+        choices: [
+            { text: "🕷️ Educate the world about spiders", next: "restart" }
+        ]
+    },
+
+    spider_wrangler: {
+        title: "🕷️ The Spider Wrangler",
+        text: "You become the office spider wrangler, helping colleagues with their arachnid encounters. Your Production Excellence team appreciates your spider management skills. You develop a reputation as the go-to spider expert. Final budget: $20,000,000.00. You've turned spider encounters into a specialty skill!",
+        choices: [
+            { text: "🕷️ Wrangle a new adventure", next: "restart" }
+        ]
+    },
+
+    spider_courage_boost: {
+        title: "💪 The Spider Courage Boost",
+        text: "Your spider bravery translates into work confidence. Your Production Excellence teammates notice your increased boldness in technical discussions and leadership opportunities. You channel spider courage into career growth. Final budget: $30,000,000.00. You've learned that small acts of bravery lead to big opportunities!",
+        choices: [
+            { text: "💪 Courageously tackle a new adventure", next: "restart" }
+        ]
+    },
+
+    spider_team_coordinator: {
+        title: "🤝 The Spider Team Coordinator",
+        text: "You become the team's go-to person for problem-solving and coordination. Your Production Excellence teammates trust you to handle challenging situations. Your spider teamwork experience becomes a model for other challenges. Final budget: $40,000,000.00. You've turned spider management into leadership skills!",
+        choices: [
+            { text: "🤝 Coordinate a new adventure", next: "restart" }
+        ]
+    },
+
+    spider_response_team: {
+        title: "🕷️ The Spider Response Team",
+        text: "You establish Shopify's first Spider Response Team. Your Production Excellence colleagues become trained spider specialists. Your team's spider management protocols are adopted company-wide. Final budget: $50,000,000.00. You've systematized spider solutions!",
+        choices: [
+            { text: "🕷️ Respond to a new adventure", next: "restart" }
+        ]
+    },
+
+    spider_whisperer_ending: {
+        title: "🕷️ The Spider Whisperer",
+        text: "You become the legendary spider whisperer. Your ability to communicate with arachnids becomes renowned. Your Production Excellence team markets your spider consultation services. Final budget: $75,000,000.00. You've found your calling in spider relations!",
+        choices: [
+            { text: "🕷️ Whisper to a new adventure", next: "restart" }
+        ]
+    },
+
+    spider_enlightenment: {
+        title: "🧘 The Spider Enlightenment",
+        text: "You achieve enlightenment through spider coexistence. Your zen approach to arachnid harmony becomes a philosophy. Your Production Excellence team learns mindfulness through your spider wisdom. Final budget: $100,000,000.00. You've found peace through eight-legged meditation!",
+        choices: [
+            { text: "🧘 Achieve enlightenment in a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_distraction: {
+        title: "📺 The Movie Distraction",
+        text: "You decide to watch '28 Days Later' on TV instead of playing walking simulators. The zombie movie draws you in completely. You lose track of time as you follow the post-apocalyptic survival story. Hours pass. Your Production Excellence teammates start messaging you about the daily standup. You realize you're going to be late to work! The budget fluctuates wildly as you face the movie/work dilemma.",
+        choices: [
+            { text: "😰 Panic and rush to work late", next: "movie_late_panic" },
+            { text: "🎬 Finish the movie and embrace the consequences", next: "movie_commitment" },
+            { text: "💡 Use the movie as inspiration for work", next: "movie_inspiration" },
+            { text: "🤝 Invite your teammates to watch together", next: "movie_team_bonding" }
+        ]
+    },
+
+    movie_late_panic: {
+        title: "😰 The Late Movie Panic",
+        text: "You rush to work 2 hours late, hair disheveled, still thinking about zombies. Your Production Excellence teammates ask what happened. You sheepishly explain you got distracted by '28 Days Later.' They laugh and admit they've all been there. You're flustered but the team understands. The budget drops to $1,000,000.00 as your productivity suffers from movie-induced stress.",
+        choices: [
+            { text: "😅 Laugh it off and get back to work", next: "movie_recovery" },
+            { text: "🎬 Become the team's movie recommendation expert", next: "movie_curator" }
+        ]
+    },
+
+    movie_commitment: {
+        title: "🎬 The Movie Commitment",
+        text: "You decide to finish the movie and deal with the consequences. '28 Days Later' proves to be incredibly inspiring! The themes of survival, leadership, and team dynamics give you amazing insights. You arrive at work 3 hours late but with revolutionary ideas about resilience and crisis management. Your Production Excellence teammates are initially annoyed but amazed by your creative problem-solving approaches. The budget soars to $28,000,000.00 as your movie-inspired leadership transforms the team!",
+        choices: [
+            { text: "🏆 Become the crisis management guru", next: "movie_crisis_guru" },
+            { text: "🎬 Apply movie lessons to team building", next: "movie_team_building" }
+        ]
+    },
+
+    movie_inspiration: {
+        title: "💡 The Movie Inspiration",
+        text: "You use '28 Days Later' as inspiration for work! The zombie apocalypse survival strategies translate perfectly to debugging production issues and managing technical crises. Your Production Excellence teammates are impressed by your creative problem-solving approach. You develop the 'Zombie Incident Response Protocol' that becomes legendary. The budget reaches $50,000,000.00 as your movie-inspired methodologies save the day!",
+        choices: [
+            { text: "🧟 Become the zombie protocol expert", next: "zombie_protocol_master" },
+            { text: "🎬 Create movie-inspired development frameworks", next: "movie_framework_guru" }
+        ]
+    },
+
+    movie_team_bonding: {
+        title: "🤝 The Movie Team Bonding",
+        text: "You invite your Production Excellence teammates to watch '28 Days Later' together during lunch. It becomes an amazing team bonding experience! You discuss survival strategies, leadership under pressure, and team dynamics. The movie watching sessions become a regular team tradition. The budget grows to $35,000,000.00 as team cohesion improves through shared movie experiences!",
+        choices: [
+            { text: "🎬 Become the team's movie night coordinator", next: "movie_coordinator" },
+            { text: "🤝 Expand movie bonding company-wide", next: "movie_culture_builder" }
+        ]
+    },
+
+    movie_recovery: {
+        title: "😅 The Movie Recovery",
+        text: "You laugh off your movie-induced lateness and get back to work. Your Production Excellence teammates appreciate your good humor about the situation. You become known as the person who 'got zombie-distracted' and it becomes a funny team story. The budget recovers to $5,000,000.00 as your ability to laugh at yourself builds team morale!",
+        choices: [
+            { text: "😅 Become the team's comic relief", next: "movie_comedian" },
+            { text: "🎬 Balance movie time with work discipline", next: "movie_balance_master" }
+        ]
+    },
+
+    movie_curator: {
+        title: "🎬 The Movie Curator",
+        text: "You become the team's movie recommendation expert. Your Production Excellence teammates trust your film suggestions completely. You create curated movie lists for different team needs: 'Debugging Motivation Movies,' 'Crisis Management Films,' and 'Team Building Cinema.' The budget reaches $25,000,000.00 as your movie expertise enhances team culture!",
+        choices: [
+            { text: "🎬 Become the chief movie culture officer", next: "movie_culture_officer" },
+            { text: "📚 Write movie guides for developers", next: "movie_guide_author" }
+        ]
+    },
+
+    movie_crisis_guru: {
+        title: "🏆 The Crisis Management Guru",
+        text: "Your movie-inspired crisis management skills become legendary. Your Production Excellence team handles incidents with zombie-apocalypse-level preparedness. You develop the 'Survival Cinema Leadership Framework' that transforms how the company handles crises. Final budget: $100,000,000.00. You've turned movie distraction into crisis mastery!",
+        choices: [
+            { text: "🏆 Lead through a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_team_building: {
+        title: "🎬 The Movie Team Building Master",
+        text: "You apply movie lessons to team building, creating the most cohesive Production Excellence team ever. Your film-inspired leadership techniques are adopted throughout Shopify. Final budget: $85,000,000.00. You've turned cinema into team excellence!",
+        choices: [
+            { text: "🎬 Direct a new adventure", next: "restart" }
+        ]
+    },
+
+    zombie_protocol_master: {
+        title: "🧟 The Zombie Protocol Master",
+        text: "Your 'Zombie Incident Response Protocol' becomes the gold standard for handling production crises. Your Production Excellence team never panics during outages because they follow your survival-inspired methodologies. Final budget: $75,000,000.00. You've turned zombie movies into technical excellence!",
+        choices: [
+            { text: "🧟 Survive a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_framework_guru: {
+        title: "🎬 The Movie Framework Guru",
+        text: "You create movie-inspired development frameworks that revolutionize how teams approach technical challenges. Your 'Cinematic Development Methodology' becomes an industry standard. Final budget: $125,000,000.00. You've turned film into development philosophy!",
+        choices: [
+            { text: "🎬 Framework a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_coordinator: {
+        title: "🎬 The Movie Coordinator",
+        text: "You become the team's movie night coordinator, creating the most engaging team culture through shared cinema experiences. Your Production Excellence team's movie nights become legendary throughout the company. Final budget: $60,000,000.00. You've coordinated your way to cultural success!",
+        choices: [
+            { text: "🎬 Coordinate a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_culture_builder: {
+        title: "🤝 The Movie Culture Builder",
+        text: "You expand movie bonding company-wide, creating the most innovative team culture through shared film experiences. Your approach revolutionizes how Shopify builds team connections. Final budget: $150,000,000.00. You've built culture through cinema!",
+        choices: [
+            { text: "🎬 Build a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_comedian: {
+        title: "😅 The Movie Comedian",
+        text: "You become the team's comic relief, known for your ability to find humor in any situation. Your Production Excellence teammates appreciate your positive attitude and funny stories. Final budget: $30,000,000.00. You've laughed your way to team success!",
+        choices: [
+            { text: "😅 Laugh into a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_balance_master: {
+        title: "🎬 The Movie Balance Master",
+        text: "You master the art of balancing movie time with work discipline. Your Production Excellence team learns from your ability to enjoy entertainment while maintaining productivity. Final budget: $45,000,000.00. You've balanced your way to success!",
+        choices: [
+            { text: "⚖️ Balance a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_culture_officer: {
+        title: "🎬 The Movie Culture Officer",
+        text: "You become Shopify's Chief Movie Culture Officer, using film to build amazing team cultures throughout the company. Your movie-based team building becomes an industry model. Final budget: $200,000,000.00. You've officiated your way to cultural revolution!",
+        choices: [
+            { text: "🎬 Culture a new adventure", next: "restart" }
+        ]
+    },
+
+    movie_guide_author: {
+        title: "📚 The Movie Guide Author",
+        text: "You write the definitive guide to using movies for developer team building. Your book 'Cinema for Coders' becomes a bestseller in the tech industry. Final budget: $175,000,000.00. You've authored your way to movie mastery!",
+        choices: [
+            { text: "📚 Write a new adventure", next: "restart" }
+        ]
     }
 };
 
@@ -1909,7 +2246,47 @@ function updateBudgetForChoice(storyKey) {
         'casual_fine_dining_master': () => setBudget(-5000000),
         'budget_anxiety_guru': () => setBudget(47000000),
         'ramen_philosopher': () => setBudget(1000000),
-        'fake_casual_empire': () => setBudget(100000000)
+        'fake_casual_empire': () => setBudget(100000000),
+        // New joke story budget changes
+        'sorting_chaos': () => setBudget(Math.random() * 24999900 + 100),
+        'sorting_defeat': () => setBudget(2222222.22),
+        'sorting_mastery': () => setBudget(50000000),
+        'sorting_team_building': () => setBudget(33333333.33),
+        'chaos_enlightenment': () => setBudget(77777777.77),
+        'organization_emperor': () => setBudget(200000000),
+        'sorting_guru_ending': () => setBudget(150000000),
+        'team_building_master': () => setBudget(100000000),
+        'chaos_manager_ending': () => setBudget(250000000),
+        'spider_encounter': () => setBudget(1337420.69),
+        'spider_panic': () => setBudget(500000),
+        'spider_hero': () => setBudget(10000000),
+        'spider_teamwork': () => setBudget(15000000),
+        'spider_coexistence': () => setBudget(25000000),
+        'spider_refugee': () => setBudget(2000000),
+        'spider_educator': () => setBudget(8000000),
+        'spider_wrangler': () => setBudget(20000000),
+        'spider_courage_boost': () => setBudget(30000000),
+        'spider_team_coordinator': () => setBudget(40000000),
+        'spider_response_team': () => setBudget(50000000),
+        'spider_whisperer_ending': () => setBudget(75000000),
+        'spider_enlightenment': () => setBudget(100000000),
+        'movie_distraction': () => setBudget(Math.random() * 10000000 + 1000000),
+        'movie_late_panic': () => setBudget(1000000),
+        'movie_commitment': () => setBudget(28000000),
+        'movie_inspiration': () => setBudget(50000000),
+        'movie_team_bonding': () => setBudget(35000000),
+        'movie_recovery': () => setBudget(5000000),
+        'movie_curator': () => setBudget(25000000),
+        'movie_crisis_guru': () => setBudget(100000000),
+        'movie_team_building': () => setBudget(85000000),
+        'zombie_protocol_master': () => setBudget(75000000),
+        'movie_framework_guru': () => setBudget(125000000),
+        'movie_coordinator': () => setBudget(60000000),
+        'movie_culture_builder': () => setBudget(150000000),
+        'movie_comedian': () => setBudget(30000000),
+        'movie_balance_master': () => setBudget(45000000),
+        'movie_culture_officer': () => setBudget(200000000),
+        'movie_guide_author': () => setBudget(175000000)
     };
 
     if (budgetChanges[storyKey]) {

@@ -1,1 +1,13 @@
- 
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Background -->
+  <rect width="16" height="16" fill="#00A651" rx="2"/>
+  
+  <!-- Simple almond/nut shape -->
+  <ellipse cx="8" cy="8" rx="5" ry="3" fill="#D2691E" transform="rotate(45 8 8)"/>
+  <ellipse cx="8" cy="8" rx="3" ry="2" fill="#F4A460" transform="rotate(45 8 8)"/>
+  
+  <!-- Crunchy texture dot -->
+  <circle cx="7" cy="7" r="0.5" fill="#8B4513"/>
+  <circle cx="9" cy="9" r="0.5" fill="#8B4513"/>
+</svg> 
